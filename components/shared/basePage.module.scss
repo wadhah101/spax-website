@@ -1,0 +1,8 @@
+@import '../../styles/scss/shared.scss';
+
+.bigger {
+  font-size: 5rem;
+  @include md {
+    font-size: 6rem;
+  }
+}

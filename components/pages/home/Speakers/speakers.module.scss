@@ -1,0 +1,51 @@
+@import '../../../../styles/scss/shared.scss';
+
+.container {
+  @extend .baseContainer;
+  padding-top: 12vh;
+  padding-bottom: 5vh;
+}
+
+.paddedImageGrid {
+  @extend .imageGrid;
+  @include md {
+    padding: 0 2rem;
+  }
+}
+
+.el {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 95%;
+  }
+  p {
+    font-weight: 500;
+    color: #00000080;
+  }
+
+  &:hover .appear {
+    transform: translateY(0);
+  }
+
+  &:hover img {
+    filter: grayscale(0);
+  }
+}
+
+.elImage {
+  position: relative;
+  overflow: hidden;
+  img {
+    z-index: 3;
+    transition: all ease 0.3s;
+    width: 100%;
+    @include md {
+      filter: grayscale(1);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../../../styles/scss/shared.scss';
+.container {
+  margin: 1rem 0;
+  @include md {
+    margin: 3rem 0;
+  }
+}
+
+.elementGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  > *:first-child {
+    grid-column: 1 / -1;
+  }
+  @include md {
+    grid-template-columns: repeat(5, 1fr);
+    > *:first-child {
+      grid-column: auto;
+    }
+  }
+}

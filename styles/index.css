@@ -1,0 +1,25 @@
+@import './reset.css';
+@import '../fonts/work-sans/index.css';
+@import '../fonts/poppins/index.css';
+/* header font  */
+
+header {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', sans-serif;
+} */
+
+/* WARNING ONLY USE FOR PROD */
+body {
+  overflow-x: hidden;
+}

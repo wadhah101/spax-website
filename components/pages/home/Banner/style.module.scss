@@ -1,0 +1,82 @@
+@import '../../../../styles/scss/shared';
+
+.title {
+  line-height: 130%;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 6.5vw;
+  @include md {
+    font-size: 2.75rem;
+  }
+  @include xl {
+    font-size: 3.5rem;
+  }
+}
+
+.bigger {
+  line-height: 110%;
+  font-size: 18vw;
+  @include md {
+    font-size: 5.25rem;
+  }
+  @include xl {
+    font-size: 6.5rem;
+  }
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  @include md {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  @include xl {
+    margin-top: 0.75rem;
+    margin-bottom: 2rem;
+
+    font-size: 1.5rem;
+  }
+}
+
+.videoButton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  svg {
+    margin-right: 0.75rem;
+    font-size: 2rem;
+  }
+}
+
+.joinButton {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  background: $main;
+}
+
+.interact {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: row dense;
+  gap: 0.75rem;
+  @include md {
+    grid-auto-flow: column dense;
+    gap: 1.5rem;
+  }
+}
+
+.container {
+  @extend .baseContainer;
+  display: flex;
+  margin: 0;
+  z-index: 3;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

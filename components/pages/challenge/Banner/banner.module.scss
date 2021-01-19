@@ -1,0 +1,49 @@
+@import '../../home/Banner/style.module.scss';
+
+.cdcButton {
+  display: grid;
+  grid-auto-flow: column dense;
+  margin: auto;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 0.25rem;
+  padding: 1rem 1rem;
+  background: $main;
+  svg {
+    font-size: 1.25rem;
+  }
+  @include md {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.rTitle {
+  @extend .title;
+  font-size: 7vw;
+
+  @include md {
+    font-size: 2.75rem;
+  }
+  @include xl {
+    font-size: 3.5rem;
+  }
+
+  .bigger {
+    font-size: 11.5vw;
+    @include md {
+      font-size: 5.25rem;
+    }
+    @include xl {
+      font-size: 6.5rem;
+    }
+  }
+}
+
+.rContainer {
+  @extend .container;
+  display: flex;
+  align-items: s;
+}

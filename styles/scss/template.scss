@@ -1,0 +1,40 @@
+@import './breakpoints.scss';
+
+.baseContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0rem 1rem;
+}
+
+.baseTitle {
+  font-size: 3rem;
+  @include md {
+    font-size: 4rem;
+  }
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.imageGrid {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  @include md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.greyBg {
+  background: #f1f1f1;
+}
+
+.basePage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background: #fff;
+}

@@ -1,0 +1,22 @@
+@import '../../../../styles/scss/shared.scss';
+@import '../../home/Partner/partner.module.scss';
+
+.writing {
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.accent {
+  color: $main;
+}
+
+.reduced {
+  padding-top: 5rem;
+}
+
+.gr {
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3rem;
+  }
+}
