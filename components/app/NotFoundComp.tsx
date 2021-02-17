@@ -1,8 +1,8 @@
-import * as React from 'react'
-import BannerWithImage from '../template/BannerWithImage'
-import styles from '../shared/basePage.module.scss'
+import * as React from "react";
+import BannerWithImage from "../template/BannerWithImage";
+import styles from "../shared/basePage.module.scss";
 
-const image = '/lost.webp'
+const image = "/lost.webp";
 
 const NotFoundComp: React.FunctionComponent = () => {
   return (
@@ -15,7 +15,7 @@ const NotFoundComp: React.FunctionComponent = () => {
         </h1>
       </div>
     </BannerWithImage>
-  )
-}
+  );
+};
 
-export default NotFoundComp
+export default NotFoundComp;

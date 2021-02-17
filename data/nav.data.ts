@@ -1,18 +1,19 @@
 export interface NavElement {
-  href: string
-  name: string
+  href: string;
+  name: string;
 }
 
-export const navFactory = (href: string, name: string): NavElement => ({
+export const navElementGen = (href: string, name: string): NavElement => ({
   href,
   name,
-})
+});
 
 export const navElements: NavElement[] = [
-  navFactory('/', 'home'),
-  navFactory('/challenge', 'challenge'),
-  navFactory('/access', 'event access'),
-  navFactory('/facts', 'did you know'),
-]
+  navElementGen("/", "home"),
+  navElementGen("/blog", "did you know"),
+  navElementGen("/challenge", "challenge"),
+  navElementGen("/about", "about us"),
+  navElementGen("/contact", "contact"),
+];
 
-export const inscriptionLink = navFactory('/inscription', 'join us')
+export const inscriptionLink = navElementGen("/inscription", "join us");

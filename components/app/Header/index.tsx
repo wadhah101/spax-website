@@ -1,53 +1,53 @@
-import Link from 'next/link'
-import * as React from 'react'
-import { navElements } from '../../../data/nav.data'
-import NavLink from '../../template/NavLink'
-import styles from './header.module.scss'
-import navStyles from './nav.anchor.module.scss'
-import clsx from 'clsx'
-import * as fi from 'react-icons/fi'
-import { useOnClickOutside } from '../../../lib/onClickOutsideHook'
-import { useAnalytics } from 'use-analytics'
-import { withRouter } from 'next/router'
-import { WithRouterProps } from 'next/dist/client/with-router'
+import Link from "next/link";
+import * as React from "react";
+import { navElements } from "../../../data/nav.data";
+import NavLink from "../../template/NavLink";
+import styles from "./header.module.scss";
+import navStyles from "./nav.anchor.module.scss";
+import clsx from "clsx";
+import * as fi from "react-icons/fi";
+import { useOnClickOutside } from "../../../lib/onClickOutsideHook";
+import { useAnalytics } from "use-analytics";
+import { withRouter } from "next/router";
+import { WithRouterProps } from "next/dist/client/with-router";
 
 const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
-  const { track } = useAnalytics()
-  const [solidBackground, setSolidBackground] = React.useState(false)
-  const [open, setOpen] = React.useState(false)
-  const ref = React.useRef<HTMLTableHeaderCellElement>(null)
+  const { track } = useAnalytics();
+  const [solidBackground, setSolidBackground] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
+  const ref = React.useRef<HTMLTableHeaderCellElement>(null);
   useOnClickOutside(ref, () => {
-    setOpen(false)
-    track('mobile menu auto close')
-  })
+    setOpen(false);
+    track("mobile menu auto close");
+  });
 
   React.useEffect(() => {
-    let last_known_scroll_position = 0
-    let ticking = false
+    let last_known_scroll_position = 0;
+    let ticking = false;
     const tripping =
       window.innerWidth > 768
         ? window.innerHeight * 0.75
-        : window.innerHeight * 0.5
+        : window.innerHeight * 0.5;
 
     function handler(scroll_pos: number) {
       if (scroll_pos > tripping && !solidBackground) {
-        setSolidBackground(true)
+        setSolidBackground(true);
       } else if (scroll_pos <= tripping && solidBackground) {
-        setSolidBackground(false)
+        setSolidBackground(false);
       }
     }
 
-    window.addEventListener('scroll', () => {
-      last_known_scroll_position = window.scrollY
+    window.addEventListener("scroll", () => {
+      last_known_scroll_position = window.scrollY;
       if (!ticking) {
         window.requestAnimationFrame(function () {
-          handler(last_known_scroll_position)
-          ticking = false
-        })
-        ticking = true
+          handler(last_known_scroll_position);
+          ticking = false;
+        });
+        ticking = true;
       }
-    })
-  }, [solidBackground])
+    });
+  }, [solidBackground]);
 
   return (
     <header
@@ -55,7 +55,7 @@ const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
       className={clsx(
         { [styles.white]: solidBackground || open },
         {
-          [styles.whiteBg]: router.pathname === '/facts' && !open,
+          [styles.whiteBg]: router.pathname === "/facts" && !open,
         },
         styles.header
       )}
@@ -78,8 +78,8 @@ const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
         </nav>
         <div
           onClick={() => {
-            setOpen((e) => !e)
-            track(`mobile menu manual ${open ? 'open' : 'close'}`)
+            setOpen((e) => !e);
+            track(`mobile menu manual ${open ? "open" : "close"}`);
           }}
           className={styles.menuIcon}
         >
@@ -98,7 +98,7 @@ const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
         </nav>
       )}
     </header>
-  )
-}
+  );
+};
 
-export default withRouter(Header)
+export default withRouter(Header);

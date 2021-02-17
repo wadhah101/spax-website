@@ -1,9 +1,9 @@
-import * as React from 'react'
-import styled from 'styled-components'
-import { down } from 'styled-breakpoints'
+import * as React from "react";
+import styled from "styled-components";
+import { down } from "styled-breakpoints";
 
 interface IPictureSeparatorProps {
-  pictures: string[]
+  pictures: string[];
 }
 
 const Container = styled.section`
@@ -11,15 +11,15 @@ const Container = styled.section`
   > * {
     flex-grow: 1;
   }
-`
+`;
 
 const StyledImage = styled.img`
   object-fit: cover;
   height: 400px;
-  ${down('md')} {
+  ${down("md")} {
     width: 50%;
   }
-`
+`;
 
 const PictureSeparator: React.FunctionComponent<IPictureSeparatorProps> = ({
   pictures,
@@ -30,7 +30,7 @@ const PictureSeparator: React.FunctionComponent<IPictureSeparatorProps> = ({
         <StyledImage alt={e} src={e} key={e} />
       ))}
     </Container>
-  )
-}
+  );
+};
 
-export default PictureSeparator
+export default PictureSeparator;

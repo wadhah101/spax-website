@@ -1,7 +1,7 @@
-import * as React from 'react'
-import DescriptionElement from './DescriptionElement'
-import styles from './style.module.scss'
-import { INTRO_DATA } from './index.data'
+import * as React from "react";
+import DescriptionElement from "./DescriptionElement";
+import styles from "./style.module.scss";
+import { INTRO_DATA } from "./index.data";
 
 const Goal: React.FunctionComponent = () => {
   return (
@@ -12,7 +12,7 @@ const Goal: React.FunctionComponent = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Goal
+export default Goal;

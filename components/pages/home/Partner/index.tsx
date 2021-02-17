@@ -1,7 +1,7 @@
-import * as React from 'react'
-import styles from './partner.module.scss'
-import { useAnalytics } from 'use-analytics'
-import clsx from 'clsx'
+import * as React from "react";
+import styles from "./partner.module.scss";
+import { useAnalytics } from "use-analytics";
+import clsx from "clsx";
 
 class Partner {
   public constructor(
@@ -13,43 +13,43 @@ class Partner {
 
 const partners = [
   new Partner(
-    'She Starts',
-    'https://www.shestarts.com/',
-    '/partners/she_starts.webp'
+    "She Starts",
+    "https://www.shestarts.com/",
+    "/partners/she_starts.webp"
   ),
   new Partner(
-    'IEEE region 8',
-    'https://ieeer8.org/',
-    '/partners/IEEE-Region-8.webp'
+    "IEEE region 8",
+    "https://ieeer8.org/",
+    "/partners/IEEE-Region-8.webp"
   ),
   new Partner(
-    'IEEE young professionals',
-    'https://yp.ieee.org/',
-    '/partners/IEEE-yp.webp'
+    "IEEE young professionals",
+    "https://yp.ieee.org/",
+    "/partners/IEEE-yp.webp"
   ),
-  new Partner('Latis', 'http://www.latis-eniso.org/', '/partners/latis.png'),
+  new Partner("Latis", "http://www.latis-eniso.org/", "/partners/latis.png"),
 
   new Partner(
-    'IEEE RAS INSAT',
-    'https://ras-insat.ieee.tn/',
-    '/partners/ras-insat.webp'
+    "IEEE RAS INSAT",
+    "https://ras-insat.ieee.tn/",
+    "/partners/ras-insat.webp"
   ),
-  new Partner('IEEE tunisia section', 'https://ieee.tn/', '/partners/sc.webp'),
+  new Partner("IEEE tunisia section", "https://ieee.tn/", "/partners/sc.webp"),
   new Partner(
-    'IEEE IAS tunisia section',
-    'https://ias.ieee.tn/',
-    '/partners/ias-sc.webp'
+    "IEEE IAS tunisia section",
+    "https://ias.ieee.tn/",
+    "/partners/ias-sc.webp"
   ),
 
   new Partner(
-    'INSAT startup nation',
-    'https://www.facebook.com/InsatStartupNation',
-    '/partners/isn.webp'
+    "INSAT startup nation",
+    "https://www.facebook.com/InsatStartupNation",
+    "/partners/isn.webp"
   ),
-]
+];
 
 const Partners: React.FunctionComponent = () => {
-  const { track } = useAnalytics()
+  const { track } = useAnalytics();
 
   return (
     <section className={styles.wrapper}>
@@ -61,9 +61,9 @@ const Partners: React.FunctionComponent = () => {
           <a
             rel="noreferrer"
             target="_blank"
-            href={'https://www.novationcity.com/'}
-            className={clsx(styles.el, 'flex flex-col items-center mb-16')}
-            title={'novation city'}
+            href={"https://www.novationcity.com/"}
+            className={clsx(styles.el, "flex flex-col items-center mb-16")}
+            title={"novation city"}
             onClick={() => track(`novation city link click`)}
           >
             <img alt="novation city picture" src="/partners/novation.webp" />
@@ -94,7 +94,7 @@ const Partners: React.FunctionComponent = () => {
         {/* partners */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Partners
+export default Partners;

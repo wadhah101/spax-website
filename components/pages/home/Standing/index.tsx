@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { placeholder } from '../../../../pages/_app'
-import styles from './standing.module.scss'
+import * as React from "react";
+import { placeholder } from "../../../../pages/_app";
+import styles from "./standing.module.scss";
 
 const arr = [
-  { name: 'innovation', text: placeholder, image: '/home/innov.webp' },
-  { name: 'industry', text: placeholder, image: '/home/industry.webp' },
-  { name: 'infrastructure', text: placeholder, image: '/home/infra.webp' },
-]
+  { name: "innovation", text: placeholder, image: "/home/innov.webp" },
+  { name: "industry", text: placeholder, image: "/home/industry.webp" },
+  { name: "infrastructure", text: placeholder, image: "/home/infra.webp" },
+];
 
 const Standing: React.FunctionComponent = () => {
   return (
@@ -26,7 +26,7 @@ const Standing: React.FunctionComponent = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Standing
+export default Standing;

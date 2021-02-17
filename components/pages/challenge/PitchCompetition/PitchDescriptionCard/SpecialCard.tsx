@@ -1,5 +1,5 @@
-import * as React from 'react'
-import styles from './special.module.scss'
+import * as React from "react";
+import styles from "./special.module.scss";
 
 const SpecialCard: React.FunctionComponent = () => {
   return (
@@ -43,7 +43,7 @@ const SpecialCard: React.FunctionComponent = () => {
         scalability for many devices across multiple domains and verticals.
       </p>
     </li>
-  )
-}
+  );
+};
 
-export default SpecialCard
+export default SpecialCard;

@@ -1,27 +1,27 @@
-import clsx from 'clsx'
-import * as React from 'react'
-import FactsVideo from '../Video'
-import styles from './style.module.scss'
-import { useAnalytics } from 'use-analytics'
+import clsx from "clsx";
+import * as React from "react";
+import FactsVideo from "../Video";
+import styles from "./style.module.scss";
+import { useAnalytics } from "use-analytics";
 
 const FactsBanner: React.FunctionComponent = () => {
-  const { track } = useAnalytics()
+  const { track } = useAnalytics();
 
   return (
     <section
       className={clsx(
-        styles['p-header'],
-        ' md:grid place-items-center flex-grow'
+        styles["p-header"],
+        " md:grid place-items-center flex-grow"
       )}
     >
       <div className={styles.baseContainer}>
         <div
           className={clsx(
-            'grid items-center gap-x-6 gap-y-4',
-            styles['grid-colums-1-2-3']
+            "grid items-center gap-x-6 gap-y-4",
+            styles["grid-colums-1-2-3"]
           )}
         >
-          <div onClick={() => track('region 8 vid')}>
+          <div onClick={() => track("region 8 vid")}>
             <FactsVideo />
           </div>
           <div>
@@ -47,7 +47,7 @@ const FactsBanner: React.FunctionComponent = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FactsBanner
+export default FactsBanner;

@@ -1,4 +1,4 @@
-@import '../../../../styles/scss/shared.scss';
+@import "../../../../styles/scss/shared.scss";
 
 .wrapper {
   padding-bottom: 10vh;
@@ -58,7 +58,7 @@
   margin-bottom: 0.75rem;
   position: relative;
   &::before {
-    content: '';
+    content: "";
     z-index: 7;
 
     position: absolute;

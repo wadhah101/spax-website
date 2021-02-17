@@ -1,4 +1,4 @@
-@import '../../../styles/scss/shared.scss';
+@import "../../../styles/scss/shared.scss";
 
 .navAnchor {
   font-size: 1rem;
@@ -19,7 +19,7 @@
 }
 
 .navAnchor::after {
-  content: '';
+  content: "";
   position: absolute;
   transition: all ease 0.3s;
   bottom: 0px;

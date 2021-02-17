@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import * as React from 'react'
+import Head from "next/head";
+import * as React from "react";
 
-const headDescription = `The Tunisia entrepreneurship summit is part of the IEEE Region8 Entrepreneurship initiative. This year it's in collaboration between IEEE INSAT Student Branch, and IEEE ENISO Student Branch, under the theme of "INDUSTRY,INNOVATION AND INFRASTRUCTURE".`
+const headDescription = `The Tunisia entrepreneurship summit is part of the IEEE Region8 Entrepreneurship initiative. This year it's in collaboration between IEEE INSAT Student Branch, and IEEE ENISO Student Branch, under the theme of "INDUSTRY,INNOVATION AND INFRASTRUCTURE".`;
 
 const AppHead: React.FunctionComponent = () => {
   return (
@@ -15,7 +15,7 @@ const AppHead: React.FunctionComponent = () => {
         content="wadhah mahrouk https://www.linkedin.com/in/wadhah-mahroug-392a40184/"
       />
     </Head>
-  )
-}
+  );
+};
 
-export default React.memo(AppHead)
+export default React.memo(AppHead);

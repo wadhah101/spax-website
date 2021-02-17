@@ -1,13 +1,13 @@
-import * as React from 'react'
-import BannerWithImage from '../../../template/BannerWithImage'
-import styles from './banner.module.scss'
-import * as fa from 'react-icons/fa'
-import { useAnalytics } from 'use-analytics'
+import * as React from "react";
+import BannerWithImage from "../../../template/BannerWithImage";
+import styles from "./banner.module.scss";
+import * as fa from "react-icons/fa";
+import { useAnalytics } from "use-analytics";
 
-const imageUrl = 'challenge.webp'
+const imageUrl = "challenge.webp";
 
 const Banner: React.FunctionComponent = () => {
-  const { track } = useAnalytics()
+  const { track } = useAnalytics();
 
   return (
     <BannerWithImage imageUrl={imageUrl}>
@@ -20,7 +20,7 @@ const Banner: React.FunctionComponent = () => {
           href="/files/tripe-i-specs.pdf"
           target="_blank"
           rel="noreferrer"
-          onClick={() => track('downloaded cdc')}
+          onClick={() => track("downloaded cdc")}
           className={styles.cdcButton}
         >
           <span>DOWNLOAD SPECIFICATIONS (CAHIER DE CHARGE)</span>
@@ -28,7 +28,7 @@ const Banner: React.FunctionComponent = () => {
         </a>
       </div>
     </BannerWithImage>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

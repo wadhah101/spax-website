@@ -1,18 +1,18 @@
-import * as React from 'react'
-import { Portal } from 'react-portal'
-import styles from './style.module.scss'
-import ReactPlayer from 'react-player/lazy'
-import { appContext } from '../../../../pages/_app'
-import { useOnClickOutside } from '../../../../lib/onClickOutsideHook'
+import * as React from "react";
+import { Portal } from "react-portal";
+import styles from "./style.module.scss";
+import ReactPlayer from "react-player/lazy";
+import { appContext } from "../../../../pages/_app";
+import { useOnClickOutside } from "../../../../lib/onClickOutsideHook";
 
-const url = 'https://youtu.be/uM7CJ0WLvwg'
+const url = "https://youtu.be/uM7CJ0WLvwg";
 
 const Trailer: React.FunctionComponent = () => {
-  const ref = React.useRef<HTMLDivElement>(null)
-  const { setVideoOpen } = React.useContext(appContext)
+  const ref = React.useRef<HTMLDivElement>(null);
+  const { setVideoOpen } = React.useContext(appContext);
   useOnClickOutside(ref, () => {
-    setVideoOpen(false)
-  })
+    setVideoOpen(false);
+  });
 
   return (
     <Portal>
@@ -22,7 +22,7 @@ const Trailer: React.FunctionComponent = () => {
         </div>
       </div>
     </Portal>
-  )
-}
+  );
+};
 
-export default Trailer
+export default Trailer;

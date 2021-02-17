@@ -1,9 +1,9 @@
-import * as React from 'react'
-import styles from './card.module.scss'
+import * as React from "react";
+import styles from "./card.module.scss";
 
 interface IPitchCardProps {
-  title: string
-  text: string
+  title: string;
+  text: string;
 }
 
 const PitchDescriptionCard: React.FunctionComponent<IPitchCardProps> = ({
@@ -15,7 +15,7 @@ const PitchDescriptionCard: React.FunctionComponent<IPitchCardProps> = ({
       <h4>{title}</h4>
       <p> {text} </p>
     </li>
-  )
-}
+  );
+};
 
-export default PitchDescriptionCard
+export default PitchDescriptionCard;

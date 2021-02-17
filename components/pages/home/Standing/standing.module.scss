@@ -1,4 +1,4 @@
-@import '../../../../styles/scss/shared.scss';
+@import "../../../../styles/scss/shared.scss";
 
 .container {
   color: #fff;
@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    content: '';
+    content: "";
     background: #00000080;
   }
 }

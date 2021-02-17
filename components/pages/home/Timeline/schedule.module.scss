@@ -1,4 +1,4 @@
-@import '../../../../styles/scss/shared.scss';
+@import "../../../../styles/scss/shared.scss";
 
 .period {
   font-size: 1rem;
@@ -28,7 +28,7 @@
   &::after {
     position: absolute;
     top: 0;
-    content: '';
+    content: "";
     width: 100%;
     @include md {
       width: calc(100% + 2rem);

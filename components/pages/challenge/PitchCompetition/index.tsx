@@ -1,5 +1,5 @@
-import clsx from 'clsx'
-import * as React from 'react'
+import clsx from "clsx";
+import * as React from "react";
 import {
   iiotCard,
   iiotIntro,
@@ -8,10 +8,10 @@ import {
   ngcIntro2,
   roiCards,
   roiIntro,
-} from './pitchCard.data'
-import styles from './pitch.module.scss'
-import PitchDescriptionCard from './PitchDescriptionCard/PitchCard'
-import SpecialCard from './PitchDescriptionCard/SpecialCard'
+} from "./pitchCard.data";
+import styles from "./pitch.module.scss";
+import PitchDescriptionCard from "./PitchDescriptionCard/PitchCard";
+import SpecialCard from "./PitchDescriptionCard/SpecialCard";
 
 const PitchCompetition: React.FunctionComponent = () => {
   return (
@@ -25,10 +25,10 @@ const PitchCompetition: React.FunctionComponent = () => {
 
         <p className={styles.intro}>
           The program “IEEE Region 8 Entrepreneurship Initiative“ this year is
-          focused on the topic{' '}
+          focused on the topic{" "}
           <strong>
             “Advance Technology for Humanity: Sustainable Engineering”
-          </strong>{' '}
+          </strong>{" "}
           in form of a competition for established teams or formed startups that
           present their thematic solutions at a local competition. The
           <span className={styles.acc}>
@@ -75,7 +75,7 @@ const PitchCompetition: React.FunctionComponent = () => {
           <h3 className={styles.subTitle}>Next generation cities</h3>
         </div>
         <p className={styles.intro}>{ngcIntro1}</p>
-        <p style={{ marginTop: '0.25rem' }} className={styles.intro}>
+        <p style={{ marginTop: "0.25rem" }} className={styles.intro}>
           {ngcIntro2}
         </p>
 
@@ -88,7 +88,7 @@ const PitchCompetition: React.FunctionComponent = () => {
         {/* part 2 */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PitchCompetition
+export default PitchCompetition;

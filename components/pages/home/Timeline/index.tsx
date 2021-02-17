@@ -1,7 +1,7 @@
-import * as React from 'react'
-import TimelineElement from './Element'
-import styles from './schedule.module.scss'
-import { TIMELINE_ARR } from './index.data'
+import * as React from "react";
+import TimelineElement from "./Element";
+import styles from "./schedule.module.scss";
+import { TIMELINE_ARR } from "./index.data";
 
 const Timeline: React.FunctionComponent = () => {
   return (
@@ -15,8 +15,8 @@ const Timeline: React.FunctionComponent = () => {
                 {date.map((e, ind) => (
                   <React.Fragment key={ind}>
                     <div>
-                      <p className={styles.num}> {e.format('DD')} </p>
-                      <p> {e.format('MMMM')} </p>
+                      <p className={styles.num}> {e.format("DD")} </p>
+                      <p> {e.format("MMMM")} </p>
                     </div>
                     {ind + 1 !== date.length && (
                       <div className={styles.daySeparator} />
@@ -31,10 +31,10 @@ const Timeline: React.FunctionComponent = () => {
               </ul>
             </li>
           ))}
-        </ul>{' '}
+        </ul>{" "}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Timeline
+export default Timeline;

@@ -1,13 +1,13 @@
-import clsx from 'clsx'
-import * as React from 'react'
-import styled from 'styled-components'
-import styles from './bannerWithImage.module.scss'
+import clsx from "clsx";
+import * as React from "react";
+import styled from "styled-components";
+import styles from "./bannerWithImage.module.scss";
 
 interface IBannerWithImageProps {
-  imageUrl: string
-  opacity?: number
-  as?: string
-  className?: string
+  imageUrl: string;
+  opacity?: number;
+  as?: string;
+  className?: string;
 }
 
 const BeforeOpacity = styled.div<{ op: number; url: string }>`
@@ -17,7 +17,7 @@ const BeforeOpacity = styled.div<{ op: number; url: string }>`
   &::before {
     background: rgba(0, 0, 0, ${({ op }) => op});
   }
-`
+`;
 
 const BannerWithImage: React.FunctionComponent<IBannerWithImageProps> = ({
   imageUrl,
@@ -35,11 +35,11 @@ const BannerWithImage: React.FunctionComponent<IBannerWithImageProps> = ({
     >
       {children}
     </BeforeOpacity>
-  )
-}
+  );
+};
 
 BannerWithImage.defaultProps = {
   opacity: 0.5,
-}
+};
 
-export default BannerWithImage
+export default BannerWithImage;

@@ -1,10 +1,10 @@
-import { NextPage } from 'next'
-import React from 'react'
-import BasePage from '../components/shared/BasePage'
-import styles from '../components/shared/basePage.module.scss'
-import BannerWithImage from '../components/template/BannerWithImage'
+import { NextPage } from "next";
+import React from "react";
+import BasePage from "../components/shared/BasePage";
+import styles from "../components/shared/basePage.module.scss";
+import BannerWithImage from "../components/template/BannerWithImage";
 
-const image = '/fire.webp'
+const image = "/fire.webp";
 
 const Error: NextPage = () => {
   return (
@@ -18,7 +18,7 @@ const Error: NextPage = () => {
         </div>
       </BannerWithImage>
     </BasePage>
-  )
-}
+  );
+};
 
-export default Error
+export default Error;

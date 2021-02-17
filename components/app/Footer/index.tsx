@@ -1,10 +1,10 @@
-import { socialElements } from '../../../data/social.data'
-import styles from './footer.module.scss'
-import * as fa from 'react-icons/fa'
-import { useAnalytics } from 'use-analytics'
+import { socialElements } from "../../../data/social.data";
+import styles from "./footer.module.scss";
+import * as fa from "react-icons/fa";
+import { useAnalytics } from "use-analytics";
 
 const Footer: React.FC = () => {
-  const { track } = useAnalytics()
+  const { track } = useAnalytics();
 
   return (
     <footer className={styles.footer}>
@@ -12,14 +12,14 @@ const Footer: React.FC = () => {
         <div>
           <h2 className={styles.title}>
             Tunisia Entrepreneurship
-            <span style={{ whiteSpace: 'nowrap' }}> Summit : </span>
+            <span style={{ whiteSpace: "nowrap" }}> Summit : </span>
             <br /> <span className={styles.bigger}>Triple I</span>
           </h2>
         </div>
         <div style={{ flex: 1 }} />
         {/* questions , follow  */}
         <div className={styles.right}>
-          <h3 style={{ marginBottom: '0.5rem' }} className={styles.title}>
+          <h3 style={{ marginBottom: "0.5rem" }} className={styles.title}>
             follow us
           </h3>
           {/* social media icons */}
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           {/* social media icons */}
           {/* emails */}
           <h3
-            style={{ marginBottom: '0.25rem', marginTop: '1rem' }}
+            style={{ marginBottom: "0.25rem", marginTop: "1rem" }}
             className={styles.title}
           >
             contact us
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
         <p>© 2020 IEEE INSAT, IEEE ENISO, Inc. All rights reserved.</p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

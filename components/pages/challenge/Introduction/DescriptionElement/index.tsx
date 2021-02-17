@@ -1,11 +1,14 @@
-import * as React from 'react'
-import styles from './style.module.scss'
+import * as React from "react";
+import styles from "./style.module.scss";
 interface IElementProps {
-  title: string
-  text: string
+  title: string;
+  text: string;
 }
 
-const DescriptionElement: React.FunctionComponent<IElementProps> = ({ title, text }) => {
+const DescriptionElement: React.FunctionComponent<IElementProps> = ({
+  title,
+  text,
+}) => {
   return (
     <div>
       <div className={styles.titleContainer}>
@@ -13,7 +16,7 @@ const DescriptionElement: React.FunctionComponent<IElementProps> = ({ title, tex
       </div>
       <p className={styles.writing}> {text} </p>
     </div>
-  )
-}
+  );
+};
 
-export default DescriptionElement
+export default DescriptionElement;

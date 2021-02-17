@@ -1,9 +1,9 @@
-import * as React from 'react'
-import styles from './element.module.scss'
+import * as React from "react";
+import styles from "./element.module.scss";
 
 export interface IScheduleElement {
-  title: string
-  text: string
+  title: string;
+  text: string;
 }
 
 const TimelineElement: React.FunctionComponent<IScheduleElement> = ({
@@ -15,7 +15,7 @@ const TimelineElement: React.FunctionComponent<IScheduleElement> = ({
       <h4> {title} </h4>
       <p> {text} </p>
     </li>
-  )
-}
+  );
+};
 
-export default TimelineElement
+export default TimelineElement;

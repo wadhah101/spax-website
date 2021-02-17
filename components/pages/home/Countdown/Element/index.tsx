@@ -1,12 +1,12 @@
-import * as React from 'react'
-import css from './element.module.scss'
+import * as React from "react";
+import css from "./element.module.scss";
 
 interface Props {
-  value: number
-  text: string
+  value: number;
+  text: string;
 }
 
-const NumberTransform = (n: number) => (n >= 10 ? `${n}` : `0${n}`)
+const NumberTransform = (n: number) => (n >= 10 ? `${n}` : `0${n}`);
 
 const CountdownElement: React.FunctionComponent<Props> = ({ value, text }) => {
   return (
@@ -14,7 +14,7 @@ const CountdownElement: React.FunctionComponent<Props> = ({ value, text }) => {
       <p className={css.num}> {NumberTransform(value)} </p>
       <p> {text} </p>
     </div>
-  )
-}
+  );
+};
 
-export default CountdownElement
+export default CountdownElement;

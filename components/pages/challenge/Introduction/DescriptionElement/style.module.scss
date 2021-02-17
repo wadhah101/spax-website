@@ -1,4 +1,4 @@
-@import '../../../../../styles/scss/shared.scss';
+@import "../../../../../styles/scss/shared.scss";
 
 .title {
   margin-left: 2.5rem;
@@ -21,7 +21,7 @@
 .titleContainer {
   position: relative;
   &::before {
-    content: '';
+    content: "";
     z-index: 7;
 
     position: absolute;
