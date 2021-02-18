@@ -1,10 +1,4 @@
 @import "../../../../styles/scss/shared.scss";
-.container {
-  margin: 1rem 0;
-  @include md {
-    margin: 3rem 0;
-  }
-}
 
 .elementGrid {
   display: grid;

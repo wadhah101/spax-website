@@ -1,5 +1,4 @@
 import React from "react";
-import Countdown from "../Countdown";
 import Link from "next/link";
 import styles from "./description.module.scss";
 import { useAnalytics } from "use-analytics";
@@ -12,7 +11,7 @@ const Description: React.FunctionComponent = () => {
         <h2 className={styles.title}>
           about the <br /> <span className={styles.important}>Event</span>
         </h2>
-        <Countdown />
+        {/* <Countdown /> */}
         <p className={styles.writing}>
           Getting into the entrepreneurial world is a risky adventure full of
           difficulties, especially for young entrepreneurs lacking technical

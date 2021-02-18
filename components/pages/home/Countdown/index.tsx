@@ -3,35 +3,34 @@ import CountdownElement from "./Element";
 import duration from "dayjs/plugin/duration";
 import dayjs, { Dayjs } from "dayjs";
 import styles from "./countdown.module.scss";
-const dataDay = (value: number, text: string) => ({ value, text });
 
-const arr = [
-  dataDay(0, "weeks"),
-  dataDay(0, "days"),
-  dataDay(0, "hours"),
-  dataDay(0, "min"),
-  dataDay(0, "sec"),
-];
+const periods = ["Weeks", "Days", "Hours", "Min", "Sec"];
 
-const dateDiffFactory = (current: Dayjs, event: Dayjs) => {
+const dateDiffFactoryFix = (current: Dayjs, event: Dayjs): number[] => {
   const diff = dayjs.duration(event.diff(current));
   return [
-    dataDay(diff.weeks(), "weeks"),
-    dataDay(diff.days() % 7, "days"),
-    dataDay(diff.hours(), "hours"),
-    dataDay(diff.minutes(), "min"),
-    dataDay(diff.seconds(), "sec"),
-  ].map((e) => ({ ...e, value: Math.max(0, e.value) }));
+    diff.seconds(),
+    diff.minutes(),
+    diff.hours(),
+    diff.days(),
+    diff.weeks(),
+  ].map((e) => Math.max(0, e));
 };
 
-const Countdown: React.FunctionComponent = () => {
-  const [data, setdata] = useState(arr);
+interface ICountdownProps {
+  date: Dayjs;
+}
+
+const Countdown: React.FC<ICountdownProps> = ({ date }) => {
+  const [data, setdata] = useState(new Array<number>(5).fill(0));
+  const dataView = [...data]
+    .reverse()
+    .map((e, ind) => ({ value: e, text: periods[ind] }));
 
   useEffect(() => {
     dayjs.extend(duration);
-    const event = dayjs("2020-11-21T16:00:00.000Z");
     const interval = setInterval(() => {
-      const newArr = dateDiffFactory(dayjs(), event);
+      const newArr = dateDiffFactoryFix(dayjs(), date);
       setdata(newArr);
     }, 1000);
     return () => {
@@ -39,12 +38,10 @@ const Countdown: React.FunctionComponent = () => {
     };
   }, []);
   return (
-    <div className={styles.container}>
-      <div className={styles.elementGrid}>
-        {data.map(({ value, text }) => (
-          <CountdownElement key={text} value={value} text={text} />
-        ))}
-      </div>
+    <div className={styles.elementGrid}>
+      {dataView.map(({ value, text }) => (
+        <CountdownElement key={text} value={value} text={text} />
+      ))}
     </div>
   );
 };

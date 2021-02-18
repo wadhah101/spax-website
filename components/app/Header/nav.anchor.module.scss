@@ -13,7 +13,8 @@
   align-items: center;
   &:hover *,
   &.active * {
-    color: $accent !important;
+    @apply text-spaYellow-500;
+    // color: $accent !important;
   }
   box-sizing: border-box;
 }
@@ -30,7 +31,7 @@
 }
 
 .navAnchor.active::after {
-  background: $accent;
+  @apply bg-spaYellow-500;
   left: -0.25rem;
   width: calc(100% + 0.5rem);
 }

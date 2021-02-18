@@ -10,11 +10,7 @@ const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div>
-          <h2 className={styles.title}>
-            Tunisia Entrepreneurship
-            <span style={{ whiteSpace: "nowrap" }}> Summit : </span>
-            <br /> <span className={styles.bigger}>Triple I</span>
-          </h2>
+          <img src="/logo/logo.png" />
         </div>
         <div style={{ flex: 1 }} />
         {/* questions , follow  */}
@@ -51,13 +47,13 @@ const Footer: React.FC = () => {
           </p>
           <p className={styles.mail}>
             <fa.FaMailBulk />
-            <span>sb.eniso@ieee.org</span>
+            <span>sb.enit@ieee.org</span>
           </p>
         </div>
       </div>
       <div className={styles.sep} />
       <div className={styles.writingContainer}>
-        <p>© 2020 IEEE INSAT, IEEE ENISO, Inc. All rights reserved.</p>
+        <p>© 2020 IEEE INSAT, IEEE ENIT, Inc. All rights reserved.</p>
       </div>
     </footer>
   );

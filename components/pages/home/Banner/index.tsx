@@ -1,26 +1,23 @@
-import Link from "next/link";
 import * as React from "react";
 import { FaYoutube } from "react-icons/fa";
 import { appContext } from "../../../../pages/_app";
 import BannerWithImage from "../../../template/BannerWithImage";
 import styles from "./style.module.scss";
-import { useAnalytics } from "use-analytics";
 import clsx from "clsx";
+import Countdown from "../Countdown";
+import dayjs from "dayjs";
 
 const Banner: React.FunctionComponent = () => {
   const { setVideoOpen } = React.useContext(appContext);
+  const eventDate = dayjs("2021-02-24T16:00:00.000Z");
 
   return (
     <BannerWithImage as="section" imageUrl="/2.jpg">
       <div className={styles.container}>
-        <h1 className={clsx(styles.title, " font-extrabold md:text-8xl ")}>
-          SPA<span className="text-red-500">x</span> <br />
+        <h1 className="text-6xl font-extrabold md:text-8xl">
+          SPA<span className=" text-spaRed-500">x</span> <br />
           Tunisia
         </h1>
-        {/* 
-        <h2 className="mt-2 mb-4 text-2xl ">
-          Coming Soon.
-        </h2> */}
 
         <div className="mt-4">
           {/* <Link href="/challenge" passHref>
@@ -44,6 +41,10 @@ const Banner: React.FunctionComponent = () => {
             </div>
             <span>Watch The Trailer</span>
           </button>
+        </div>
+
+        <div className="mt-6">
+          <Countdown date={eventDate} />
         </div>
       </div>
 
