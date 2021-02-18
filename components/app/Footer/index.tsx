@@ -1,59 +1,55 @@
 import { socialElements } from "../../../data/social.data";
 import styles from "./footer.module.scss";
-import * as fa from "react-icons/fa";
-import { useAnalytics } from "use-analytics";
+import { FaMailBulk } from "react-icons/fa";
 
 const Footer: React.FC = () => {
-  const { track } = useAnalytics();
-
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div>
           <img src="/logo/logo.png" />
+          <p className="mt-6 text-sm font-semibold">
+            © 2021 All Right reserved
+          </p>
         </div>
-        <div style={{ flex: 1 }} />
+        <div className="flex-grow" />
         {/* questions , follow  */}
-        <div className={styles.right}>
-          <h3 style={{ marginBottom: "0.5rem" }} className={styles.title}>
-            follow us
-          </h3>
-          {/* social media icons */}
-          <div className={styles.social}>
-            {socialElements.map((e) => (
-              <a
-                title={e.name}
-                href={e.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={e.href}
-                onClick={() => track(`${e.name} click`)}
-              >
-                <e.icon />
-              </a>
-            ))}
+        <div className="">
+          <div className="mb-6">
+            <h3 className="mb-1 text-lg font-semibold uppercase">follow us</h3>
+            {/* social media icons */}
+            <div className="flex items-center ">
+              {socialElements.map((e) => (
+                <a
+                  title={e.name}
+                  href={e.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={e.href}
+                  className="mr-2 text-2xl"
+                >
+                  <e.icon />
+                </a>
+              ))}
+            </div>
           </div>
           {/* social media icons */}
           {/* emails */}
-          <h3
-            style={{ marginBottom: "0.25rem", marginTop: "1rem" }}
-            className={styles.title}
-          >
-            contact us
-          </h3>
-          <p className={styles.mail}>
-            <fa.FaMailBulk />
-            <span>ieee.insat.sb@gmail.com</span>
-          </p>
-          <p className={styles.mail}>
-            <fa.FaMailBulk />
-            <span>sb.enit@ieee.org</span>
-          </p>
+          <h3 className="mb-1 text-lg font-semibold uppercase">contact us</h3>
+          <div className="">
+            {[
+              { icon: FaMailBulk, text: "ieee.insat.sb@gmail.com" },
+              { icon: FaMailBulk, text: "sb.enit@ieee.org" },
+            ].map((e, ind) => (
+              <div className="flex items-center" key={ind}>
+                <div>
+                  <e.icon />
+                </div>
+                <p className="ml-2"> {e.text} </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className={styles.sep} />
-      <div className={styles.writingContainer}>
-        <p>© 2020 IEEE INSAT, IEEE ENIT, Inc. All rights reserved.</p>
       </div>
     </footer>
   );

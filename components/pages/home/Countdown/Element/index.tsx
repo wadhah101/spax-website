@@ -10,7 +10,7 @@ const CountdownElement: React.FC<ICountdownElementProps> = ({
   text,
 }) => {
   return (
-    <div className="flex flex-col items-center px-6 py-2 border border-white rounded border-opacity-20 justify-items-center">
+    <div className="flex flex-col items-center px-6 py-2 border border-white border-opacity-10 justify-items-center">
       <p className="text-4xl text-spaYellow-500">
         {String(value).padStart(2, "0")}
       </p>

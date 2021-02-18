@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import CountdownElement from "./Element";
 import duration from "dayjs/plugin/duration";
 import dayjs, { Dayjs } from "dayjs";
-import styles from "./countdown.module.scss";
+import clsx from "clsx";
 
 const periods = ["Weeks", "Days", "Hours", "Min", "Sec"];
 
@@ -38,9 +38,14 @@ const Countdown: React.FC<ICountdownProps> = ({ date }) => {
     };
   }, []);
   return (
-    <div className={styles.elementGrid}>
-      {dataView.map(({ value, text }) => (
-        <CountdownElement key={text} value={value} text={text} />
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-5 ">
+      {dataView.map(({ value, text }, ind) => (
+        <div
+          className={clsx(ind === 0 && "col-span-2 md:col-span-1")}
+          key={text}
+        >
+          <CountdownElement value={value} text={text} />
+        </div>
       ))}
     </div>
   );
