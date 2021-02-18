@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         {/* questions , follow  */}
         <div className="">
           <div className="mb-6">
-            <h3 className="mb-1 text-lg font-semibold uppercase">follow us</h3>
+            <h2 className="mb-1 text-lg font-semibold uppercase">follow us</h2>
             {/* social media icons */}
             <div className="flex items-center ">
               {socialElements.map((e) => (
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           </div>
           {/* social media icons */}
           {/* emails */}
-          <h3 className="mb-1 text-lg font-semibold uppercase">contact us</h3>
+          <h2 className="mb-1 text-lg font-semibold uppercase">contact us</h2>
           <div className="">
             {[
               { icon: FaMailBulk, text: "ieee.insat.sb@gmail.com" },
