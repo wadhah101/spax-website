@@ -7,8 +7,6 @@ import { useAnalytics } from "use-analytics";
 const imageUrl = "challenge.webp";
 
 const Banner: React.FunctionComponent = () => {
-  const { track } = useAnalytics();
-
   return (
     <BannerWithImage imageUrl={imageUrl}>
       <div className={styles.rContainer}>
@@ -20,7 +18,6 @@ const Banner: React.FunctionComponent = () => {
           href="/files/tripe-i-specs.pdf"
           target="_blank"
           rel="noreferrer"
-          onClick={() => track("downloaded cdc")}
           className={styles.cdcButton}
         >
           <span>DOWNLOAD SPECIFICATIONS (CAHIER DE CHARGE)</span>
