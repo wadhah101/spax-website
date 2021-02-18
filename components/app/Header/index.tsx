@@ -63,7 +63,10 @@ const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
       <div className={styles.container}>
         <Link passHref href="/">
           <a className={styles.logo}>
-            <img alt="event icon" src="/favicon.webp" />
+            <picture>
+              <source srcSet="/logo/logo.webp" />
+              <img alt="event icon" src="/logo/logo.png" />
+            </picture>
           </a>
         </Link>
         <div className={styles.spacer} />

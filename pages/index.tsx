@@ -19,12 +19,12 @@ export const Home: NextPage = () => {
     <BasePage>
       {videoOpen && <Trailer />}
       <Banner />
-      <Description />
+      {/* <Description />
       <Committee />
       <WhyUs />
       <Speakers />
       <Timeline />
-      <Partners />
+      <Partners /> */}
     </BasePage>
   );
 };

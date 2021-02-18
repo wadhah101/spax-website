@@ -5,27 +5,25 @@ import { appContext } from "../../../../pages/_app";
 import BannerWithImage from "../../../template/BannerWithImage";
 import styles from "./style.module.scss";
 import { useAnalytics } from "use-analytics";
+import clsx from "clsx";
 
 const Banner: React.FunctionComponent = () => {
   const { setVideoOpen } = React.useContext(appContext);
 
-  const { track } = useAnalytics();
-
   return (
-    <BannerWithImage as="section" imageUrl="/suit1.webp">
+    <BannerWithImage as="section" imageUrl="/2.jpg">
       <div className={styles.container}>
-        <h1 className={styles.title}>
-          TUNISIA ENTREPRENEURSHIP <br />
-          SUMMIT :<br /> <span className={styles.bigger}>TRIPLE I</span>
+        <h1 className={clsx(styles.title, " font-extrabold md:text-8xl ")}>
+          SPA<span className="text-red-500">x</span> <br />
+          Tunisia
         </h1>
+        {/* 
+        <h2 className="mt-2 mb-4 text-2xl ">
+          Coming Soon.
+        </h2> */}
 
-        <h2 className={styles.subtitle}>
-          Industry, Innovation & Infrastructure <br />
-          November 21-2020
-        </h2>
-
-        <div className={styles.interact}>
-          <Link href="/challenge" passHref>
+        <div className="mt-4">
+          {/* <Link href="/challenge" passHref>
             <a
               onClick={() => track("challenge page from banner")}
               className={styles.joinButton}
@@ -34,18 +32,22 @@ const Banner: React.FunctionComponent = () => {
             </a>
           </Link>
 
-          <span> or </span>
+          <span> or </span> */}
           <button
-            onClick={() => {
-              setVideoOpen(true);
-              track("trailerClick");
-            }}
-            className={styles.videoButton}
+            onClick={() => setVideoOpen(true)}
+            className={clsx(
+              "flex text-lg items-center hover:text-gray-300 duration-300 ease-in-out transition-colors"
+            )}
           >
-            <FaYoutube /> Watch The Trailer
+            <div className="mr-2 text-3xl">
+              <FaYoutube />
+            </div>
+            <span>Watch The Trailer</span>
           </button>
         </div>
       </div>
+
+      {/* TODO add time counter */}
     </BannerWithImage>
   );
 };

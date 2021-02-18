@@ -10,7 +10,7 @@ export const navElementGen = (href: string, name: string): NavElement => ({
 
 export const navElements: NavElement[] = [
   navElementGen("/", "home"),
-  navElementGen("/blog", "did you know"),
+  navElementGen("/blog", "blog"),
   navElementGen("/challenge", "challenge"),
   navElementGen("/about", "about us"),
   navElementGen("/contact", "contact"),

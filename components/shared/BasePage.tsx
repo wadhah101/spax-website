@@ -1,6 +1,6 @@
 import * as React from "react";
 import { withAnalytics } from "use-analytics";
-import styles from "./bas3ePage.module.scss";
+import styles from "./basePage.module.scss";
 import clsx from "clsx";
 
 const BasePage: React.FunctionComponent<{
