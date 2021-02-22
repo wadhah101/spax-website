@@ -1,13 +1,13 @@
 import * as React from 'react'
 import BannerWithImage from './BannerWithImage'
-import styles from './comingSoon.module.scss'
-
-const imageUrl = '/hourglass.webp'
 
 const ComingSoon: React.FunctionComponent = () => {
 	return (
-		<BannerWithImage src={imageUrl}>
-			<h1 style={{ zIndex: 3, textAlign: 'center' }} className={styles.bigger}>
+		<BannerWithImage src="/space.jpg">
+			<h1
+				style={{ zIndex: 3, textAlign: 'center' }}
+				className="text-2xl font-bold tracking-wide md:text-8xl"
+			>
 				COMING <br /> SOON
 			</h1>
 		</BannerWithImage>

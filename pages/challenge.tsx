@@ -1,12 +1,12 @@
 import { NextPage } from 'next'
 import React from 'react'
-import Banner from '../components/pages/challenge/Banner'
 import BasePage from '../components/shared/BasePage'
+import ComingSoon from '../components/template/ComingSoon'
 
 const challenge: NextPage = () => {
 	return (
 		<BasePage>
-			<Banner />
+			<ComingSoon />
 		</BasePage>
 	)
 }

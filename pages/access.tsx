@@ -1,12 +1,12 @@
 import { NextPage } from 'next'
 import React from 'react'
-import AccessBanner from '../components/pages/access/Banner'
 import BasePage from '../components/shared/BasePage'
+import ComingSoon from '../components/template/ComingSoon'
 
 const access: NextPage = () => {
 	return (
 		<BasePage>
-			<AccessBanner />
+			<ComingSoon />
 		</BasePage>
 	)
 }
