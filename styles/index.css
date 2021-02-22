@@ -1,14 +1,14 @@
-@import "../fonts/work-sans/index.css";
-@import "../fonts/poppins/index.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import '../fonts/work-sans/index.css';
+@import '../fonts/poppins/index.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* header font  */
 
 header {
-  font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* h1,
@@ -21,11 +21,11 @@ h5 {
 
 /* WARNING ONLY USE FOR PROD */
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .mcontainer {
-  max-width: 1300px;
-  margin: auto;
-  padding: 0rem 1rem;
+	max-width: 1300px;
+	margin: auto;
+	padding: 0rem 1rem;
 }

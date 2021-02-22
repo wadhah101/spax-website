@@ -1,28 +1,28 @@
-@import "../../../../styles/scss/shared.scss";
+@import '../../../../styles/scss/shared.scss';
 
 .wrapper {
-  width: 100%;
-  background: rgb(36, 36, 35);
-  padding: 16vh 0;
-  color: white;
-  text-align: center;
+	width: 100%;
+	background: rgb(36, 36, 35);
+	padding: 16vh 0;
+	color: white;
+	text-align: center;
 }
 
 .title {
-  @extend .baseTitle;
-  line-height: 130%;
-  margin-bottom: 2.5rem;
+	@extend .baseTitle;
+	line-height: 130%;
+	margin-bottom: 2.5rem;
 }
 
 .el h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: $mainLight;
-  font-size: 1.75rem;
-  line-height: 110%;
-  margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $mainLight;
+	font-size: 1.75rem;
+	line-height: 110%;
+	margin-bottom: 1rem;
 }
 
 .s {
-  column-gap: 2rem;
+	column-gap: 2rem;
 }

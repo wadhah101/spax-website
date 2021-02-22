@@ -1,67 +1,67 @@
-@import "../../../../styles/scss/shared.scss";
+@import '../../../../styles/scss/shared.scss';
 
 .wrapper {
-  padding-top: 12vh;
+	padding-top: 12vh;
 
-  @include md {
-    width: 60%;
-  }
-  margin: auto;
+	@include md {
+		width: 60%;
+	}
+	margin: auto;
 }
 .title {
-  @extend .baseTitle;
-  font-size: 3rem;
-  line-height: 135%;
-  margin-bottom: 0 rem;
-  @include md {
-    font-size: 4rem;
-    line-height: 130%;
-  }
+	@extend .baseTitle;
+	font-size: 3rem;
+	line-height: 135%;
+	margin-bottom: 0 rem;
+	@include md {
+		font-size: 4rem;
+		line-height: 130%;
+	}
 }
 
 .writing {
-  font-size: 1.125rem;
-  color: rgba($color: #000000, $alpha: 0.8);
-  line-height: 150%;
-  margin-top: 0.75rem;
-  strong {
-    font-weight: 600;
-    color: $main;
-  }
+	font-size: 1.125rem;
+	color: rgba($color: #000000, $alpha: 0.8);
+	line-height: 150%;
+	margin-top: 0.75rem;
+	strong {
+		font-weight: 600;
+		color: $main;
+	}
 }
 
 .important {
-  font-size: 5.3rem;
-  color: $main;
-  @include md {
-    font-size: 7rem;
-  }
+	font-size: 5.3rem;
+	color: $main;
+	@include md {
+		font-size: 7rem;
+	}
 }
 
 .challengeLink {
-  display: grid;
-  align-items: center;
-  justify-content: start;
-  gap: 0.75rem;
-  grid-auto-flow: column dense;
-  font-size: 1.125rem;
-  transition: all ease 200ms;
-  &:hover {
-    color: $main;
-    text-decoration: underline;
-  }
-  margin: 1rem 0;
+	display: grid;
+	align-items: center;
+	justify-content: start;
+	gap: 0.75rem;
+	grid-auto-flow: column dense;
+	font-size: 1.125rem;
+	transition: all ease 200ms;
+	&:hover {
+		color: $main;
+		text-decoration: underline;
+	}
+	margin: 1rem 0;
 }
 
 .bigJoinButton {
-  margin: 1rem 0;
-  display: inline-block;
-  font-weight: 500;
-  letter-spacing: 1px;
-  border-radius: 0.25rem;
-  padding: 0.75rem 1.5rem;
-  background: $main;
-  color: white;
-  text-align: center;
-  width: 100%;
+	margin: 1rem 0;
+	display: inline-block;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.5rem;
+	background: $main;
+	color: white;
+	text-align: center;
+	width: 100%;
 }

@@ -1,37 +1,37 @@
-@import "../../../styles/scss/shared.scss";
+@import '../../../styles/scss/shared.scss';
 
 .navAnchor {
-  font-size: 1rem;
-  * {
-    transition: all ease 0.3s;
-  }
-  position: relative;
-  display: block;
-  height: $headerDesktop;
-  display: flex;
-  letter-spacing: 1px;
-  align-items: center;
-  &:hover *,
-  &.active * {
-    @apply text-spaYellow-500;
-    // color: $accent !important;
-  }
-  box-sizing: border-box;
+	font-size: 1rem;
+	* {
+		transition: all ease 0.3s;
+	}
+	position: relative;
+	display: block;
+	height: $headerDesktop;
+	display: flex;
+	letter-spacing: 1px;
+	align-items: center;
+	&:hover *,
+	&.active * {
+		@apply text-spaYellow-500;
+		// color: $accent !important;
+	}
+	box-sizing: border-box;
 }
 
 .navAnchor::after {
-  content: "";
-  position: absolute;
-  transition: all ease 0.3s;
-  bottom: 0px;
-  left: 25%;
-  width: 50%;
-  height: 4px;
-  background: transparent;
+	content: '';
+	position: absolute;
+	transition: all ease 0.3s;
+	bottom: 0px;
+	left: 25%;
+	width: 50%;
+	height: 4px;
+	background: transparent;
 }
 
 .navAnchor.active::after {
-  @apply bg-spaYellow-500;
-  left: -0.25rem;
-  width: calc(100% + 0.5rem);
+	@apply bg-spaYellow-500;
+	left: -0.25rem;
+	width: calc(100% + 0.5rem);
 }

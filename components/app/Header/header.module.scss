@@ -1,82 +1,82 @@
-@import "../../../styles/scss/shared.scss";
+@import '../../../styles/scss/shared.scss';
 .header {
-  background: transparent;
-  padding: 1rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  color: #fff;
-  transition: all ease 0.5s;
-  @include md {
-    position: absolute;
-  }
+	background: transparent;
+	padding: 1rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	color: #fff;
+	transition: all ease 0.5s;
+	@include md {
+		position: absolute;
+	}
 }
 
 header.whiteBg {
-  background: white;
-  * {
-    color: black;
-  }
+	background: white;
+	* {
+		color: black;
+	}
 }
 
 header.white {
-  * {
-    color: white;
-  }
-  background: #000000ee;
-  position: fixed;
-  @include md {
-    padding: 0;
-  }
-  box-shadow: 0 4px 6px -1px rgba($color: white, $alpha: 0.1),
-    0 2px 4px -1px rgba($color: white, $alpha: 0.06);
+	* {
+		color: white;
+	}
+	background: #000000ee;
+	position: fixed;
+	@include md {
+		padding: 0;
+	}
+	box-shadow: 0 4px 6px -1px rgba($color: white, $alpha: 0.1),
+		0 2px 4px -1px rgba($color: white, $alpha: 0.06);
 }
 
 .container {
-  @extend .baseContainer;
-  display: flex;
-  align-items: center;
+	@extend .baseContainer;
+	display: flex;
+	align-items: center;
 }
 
 .nav {
-  display: none;
-  text-transform: uppercase;
-  grid-auto-flow: column dense;
-  gap: 1.5rem;
-  @include md {
-    display: grid;
-  }
+	display: none;
+	text-transform: uppercase;
+	grid-auto-flow: column dense;
+	gap: 1.5rem;
+	@include md {
+		display: grid;
+	}
 }
 
 .menuIcon {
-  @include md {
-    display: none;
-  }
-  font-size: 2rem;
+	@include md {
+		display: none;
+	}
+	font-size: 2rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  @include md {
-    margin-right: 1.75rem;
-  }
-  img {
-    height: $headerDesktop - 2.25rem;
-  }
+	display: flex;
+	align-items: center;
+	@include md {
+		margin-right: 1.75rem;
+	}
+	img {
+		height: $headerDesktop - 2rem;
+	}
 }
 
 .spacer {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 .navMobile {
-  padding: 0.5rem 1.5rem;
-  text-transform: uppercase;
-  display: grid;
-  @include md {
-    display: none;
-  }
+	padding: 0.5rem 1.5rem;
+	text-transform: uppercase;
+	display: grid;
+	@include md {
+		display: none;
+	}
 }

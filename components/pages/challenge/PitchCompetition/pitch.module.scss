@@ -1,99 +1,99 @@
-@import "../../../../styles/scss/shared.scss";
+@import '../../../../styles/scss/shared.scss';
 
 .wrapper {
-  padding-bottom: 10vh;
+	padding-bottom: 10vh;
 }
 
 .title {
-  @extend .baseTitle;
-  line-height: 125%;
+	@extend .baseTitle;
+	line-height: 125%;
 
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 
-  @include md {
-    font-size: 4rem;
-  }
+	@include md {
+		font-size: 4rem;
+	}
 
-  .important {
-    @include md {
-      font-size: 4.5rem;
-    }
-    color: $mainLight;
-    text-shadow: 3px 3px $main;
-  }
+	.important {
+		@include md {
+			font-size: 4.5rem;
+		}
+		color: $mainLight;
+		text-shadow: 3px 3px $main;
+	}
 }
 
 .intro {
-  font-weight: 500;
-  font-size: 1.125rem;
-  strong {
-    font-weight: 600;
-  }
-  .acc {
-    color: $main;
-  }
+	font-weight: 500;
+	font-size: 1.125rem;
+	strong {
+		font-weight: 600;
+	}
+	.acc {
+		color: $main;
+	}
 }
 
 .subTitle {
-  margin-top: 2rem;
-  margin-left: 1rem;
-  margin-bottom: 0.75rem;
-  display: inline-block;
-  position: relative;
-  font-size: 2rem;
+	margin-top: 2rem;
+	margin-left: 1rem;
+	margin-bottom: 0.75rem;
+	display: inline-block;
+	position: relative;
+	font-size: 2rem;
 
-  @include md {
-    font-size: 2.25rem;
-  }
-  font-weight: 700;
-  color: $mainLight;
-  text-shadow: 3px 3px $main;
-  @include md {
-    margin-left: 3rem;
-  }
-  text-transform: uppercase;
+	@include md {
+		font-size: 2.25rem;
+	}
+	font-weight: 700;
+	color: $mainLight;
+	text-shadow: 3px 3px $main;
+	@include md {
+		margin-left: 3rem;
+	}
+	text-transform: uppercase;
 }
 
 .titleContainer {
-  margin-bottom: 0.75rem;
-  position: relative;
-  &::before {
-    content: "";
-    z-index: 7;
+	margin-bottom: 0.75rem;
+	position: relative;
+	&::before {
+		content: '';
+		z-index: 7;
 
-    position: absolute;
-    background: linear-gradient(
-      90deg,
-      $mainLight 0%,
-      rgba($color: $mainLight, $alpha: 0.1) 100%
-    );
-    bottom: 0;
-    left: 0;
-    width: 6rem;
-    height: 0.25rem;
-  }
+		position: absolute;
+		background: linear-gradient(
+			90deg,
+			$mainLight 0%,
+			rgba($color: $mainLight, $alpha: 0.1) 100%
+		);
+		bottom: 0;
+		left: 0;
+		width: 6rem;
+		height: 0.25rem;
+	}
 }
 
 .cardGrid {
-  margin-top: 1.5rem;
-  display: grid;
-  @include md {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 1rem;
-    gap: 1.5rem;
-  }
-  gap: 1rem;
+	margin-top: 1.5rem;
+	display: grid;
+	@include md {
+		grid-template-columns: 1fr 1fr;
+		padding: 0 1rem;
+		gap: 1.5rem;
+	}
+	gap: 1rem;
 }
 
 .flatten {
-  @include md {
-    grid-template-columns: 1fr;
-  }
-  gap: 1.5rem;
+	@include md {
+		grid-template-columns: 1fr;
+	}
+	gap: 1.5rem;
 }
 
 .lastElFullWidth > *:last-child {
-  @include md {
-    grid-column: 1 / -1;
-  }
+	@include md {
+		grid-column: 1 / -1;
+	}
 }

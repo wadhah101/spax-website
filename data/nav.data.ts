@@ -1,19 +1,19 @@
 export interface NavElement {
-  href: string;
-  name: string;
+	href: string
+	name: string
 }
 
 export const navElementGen = (href: string, name: string): NavElement => ({
-  href,
-  name,
-});
+	href,
+	name,
+})
 
 export const navElements: NavElement[] = [
-  navElementGen("/", "home"),
-  navElementGen("/blog", "blog"),
-  navElementGen("/challenge", "challenge"),
-  navElementGen("/about", "about us"),
-  navElementGen("/contact", "contact"),
-];
+	navElementGen('/', 'home'),
+	navElementGen('/blog', 'blog'),
+	navElementGen('/challenge', 'challenge'),
+	navElementGen('/about', 'about us'),
+	navElementGen('/contact', 'contact'),
+]
 
-export const inscriptionLink = navElementGen("/inscription", "join us");
+export const inscriptionLink = navElementGen('/inscription', 'join us')

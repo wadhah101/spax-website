@@ -1,11 +1,11 @@
-@import "../../../../styles/scss/shared.scss";
+@import '../../../../styles/scss/shared.scss';
 
 .wrapper {
-  padding: 10vh 0;
+	padding: 10vh 0;
 }
 
 .container {
-  @extend .baseContainer;
-  display: grid;
-  gap: 2rem;
+	@extend .baseContainer;
+	display: grid;
+	gap: 2rem;
 }

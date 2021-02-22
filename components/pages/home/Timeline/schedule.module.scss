@@ -1,71 +1,71 @@
-@import "../../../../styles/scss/shared.scss";
+@import '../../../../styles/scss/shared.scss';
 
 .period {
-  font-size: 1rem;
-  color: $main;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	font-size: 1rem;
+	color: $main;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  @include md {
-    font-size: 1.5rem;
-  }
+	@include md {
+		font-size: 1.5rem;
+	}
 }
 .el {
-  padding: 3rem 0;
-  display: grid;
-  gap: 0.75rem;
-  position: relative;
-  align-content: start;
-  @include md {
-    gap: 2rem;
-    padding: 4rem 0;
-  }
+	padding: 3rem 0;
+	display: grid;
+	gap: 0.75rem;
+	position: relative;
+	align-content: start;
+	@include md {
+		gap: 2rem;
+		padding: 4rem 0;
+	}
 
-  &::after {
-    position: absolute;
-    top: 0;
-    content: "";
-    width: 100%;
-    @include md {
-      width: calc(100% + 2rem);
-    }
-    height: 0.5rem;
-    background: linear-gradient(90deg, $main 0%, $accent 100%);
-  }
-  grid-template-columns: 2fr 10fr;
-  .elsGrid {
-    display: grid;
-    gap: 2rem;
-    align-content: start;
-  }
+	&::after {
+		position: absolute;
+		top: 0;
+		content: '';
+		width: 100%;
+		@include md {
+			width: calc(100% + 2rem);
+		}
+		height: 0.5rem;
+		background: linear-gradient(90deg, $main 0%, $accent 100%);
+	}
+	grid-template-columns: 2fr 10fr;
+	.elsGrid {
+		display: grid;
+		gap: 2rem;
+		align-content: start;
+	}
 }
 
 .container {
-  @extend .baseContainer;
-  padding-bottom: 8vh;
+	@extend .baseContainer;
+	padding-bottom: 8vh;
 }
 
 .arr {
-  display: grid;
+	display: grid;
 }
 
 .num {
-  font-size: 1.75rem;
-  line-height: 120%;
+	font-size: 1.75rem;
+	line-height: 120%;
 
-  @include md {
-    font-size: 2.25rem;
-  }
+	@include md {
+		font-size: 2.25rem;
+	}
 }
 
 .daySeparator {
-  margin: 0.5rem 0;
-  width: 0.25rem;
-  min-height: 2rem;
-  flex: 1;
-  background: $main;
+	margin: 0.5rem 0;
+	width: 0.25rem;
+	min-height: 2rem;
+	flex: 1;
+	background: $main;
 }

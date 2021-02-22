@@ -1,11 +1,11 @@
-@import "../../styles/scss/shared.scss";
+@import '../../styles/scss/shared.scss';
 
 .bigger {
-  @include md {
-    font-size: 6.5rem;
-  }
-  letter-spacing: 0.25rem;
-  font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 110%;
+	@include md {
+		font-size: 6.5rem;
+	}
+	letter-spacing: 0.25rem;
+	font-weight: 700;
+	font-size: 3.5rem;
+	line-height: 110%;
 }

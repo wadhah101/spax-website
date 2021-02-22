@@ -1,14 +1,14 @@
-@import "../../../../styles/scss/shared.scss";
+@import '../../../../styles/scss/shared.scss';
 
 .p-header {
-  padding-top: 6rem;
-  @include md {
-    padding-top: 0;
-  }
+	padding-top: 6rem;
+	@include md {
+		padding-top: 0;
+	}
 }
 
 .grid-colums-1-2-3 {
-  @include md {
-    grid-template-columns: 2fr 1fr;
-  }
+	@include md {
+		grid-template-columns: 2fr 1fr;
+	}
 }

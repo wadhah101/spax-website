@@ -1,16 +1,7 @@
-@import "../../../styles/scss/shared.scss";
+@import '../../../styles/scss/shared.scss';
 
 .footer {
-  background: #cccccc;
-  padding: 8vh 0;
-  color: #222222;
-}
-
-.container {
-  @extend .baseContainer;
-  display: flex;
-  flex-direction: column;
-  @include md {
-    flex-direction: row;
-  }
+	background: #444;
+	padding: 8vh 0;
+	color: #222222;
 }
