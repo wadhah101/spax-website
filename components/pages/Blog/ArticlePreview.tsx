@@ -18,13 +18,13 @@ const ArticlePreview: React.FunctionComponent<IArticleProps> = ({ blog }) => {
 				src={blog.image}
 			/>
 			<div className="mt-4 md:mt-0 md:ml-12">
-				<h1 className="text-3xl font-semibold text-black md:text-opacity-80">
+				<h1 className="text-2xl font-semibold text-black md:text-3xl md:text-opacity-80">
 					{blog.title}
 				</h1>
-				<div className="mt-1 mb-4 text-xs font-semibold text-black uppercase text-opacity-40 ">
+				<div className="mt-1 mb-2 text-xs font-semibold text-black uppercase md:mb-4 text-opacity-40 ">
 					{/* may god forgive me &nbsp;&nbsp;&nbsp; */}
 					BY {blog.writer}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{formatedDate}
-					&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{blog.tags}
+					&nbsp;&nbsp;&nbsp;
 				</div>
 				<p className="text-black text-opacity-90 md:text-opacity-70">
 					{blog.description}

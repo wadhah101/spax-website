@@ -23,8 +23,8 @@ const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
 		let ticking = false
 		const tripping =
 			window.innerWidth > 768
-				? window.innerHeight * 0.75
-				: window.innerHeight * 0.5
+				? window.innerHeight * 0.3
+				: window.innerHeight * 0.2
 
 		function handler(scroll_pos: number) {
 			if (scroll_pos > tripping && !solidBackground) {
