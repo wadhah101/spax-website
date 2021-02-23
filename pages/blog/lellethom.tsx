@@ -19,8 +19,11 @@ const BlogElementPage: NextPage = () => {
 					property="og:description"
 					content="The Official Blog for Spax-Tunisia Event"
 				/>
-				<meta property="og:image" content="/thumbnails/blog.jpg" />
-				<meta property="og:url" content="https://spax-tunisia.tech/blog" />
+				<meta property="og:image" content="/thumbnails/lilethom.jpg" />
+				<meta
+					property="og:url"
+					content="https://www.spax-tunisia.tech/blog/lellethom"
+				/>
 			</Head>
 			<BannerLeletom blog={l} />
 			<div className="mcontainer">
