@@ -6,7 +6,7 @@ const BlogBanner: React.FunctionComponent = () => {
 		<div>
 			<ImageHeader
 				alt="Blog Page Banner Image"
-				src="/space.jpg"
+				src="/pages/blog/blogpic.jpg"
 				className="grid place-items-center"
 				height={50}
 			>
