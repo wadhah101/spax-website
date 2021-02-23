@@ -17,6 +17,6 @@ export const mainArticles: Blog[] = [
 		date: new Date(),
 		writer: 'Kmar Mhiri & Achoick gharsallah',
 		tags: 'STARTUP',
-		href: '/habe',
+		href: '/blog/lellethom',
 	},
 ]
