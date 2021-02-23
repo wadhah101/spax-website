@@ -20,7 +20,7 @@ const BannerLeletom: React.FC<IArticleProps> = ({ blog }) => {
 			>
 				<div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
 				<div className="relative z-10 text-white ">
-					<div className="text-center">
+					<div className="text-center mcontainer">
 						<p className="mb-2 text-xs font-semibold text-white uppercase md:mb-4 text-opacity-80 ">
 							{/* may god forgive me &nbsp;&nbsp;&nbsp; */}
 							BY {blog.writer}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

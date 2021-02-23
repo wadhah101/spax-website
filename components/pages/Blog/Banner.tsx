@@ -12,7 +12,7 @@ const BlogBanner: React.FunctionComponent = () => {
 			>
 				<div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
 				<div className="relative z-10 text-white ">
-					<div className="text-center">
+					<div className="text-center mcontainer">
 						<h1 className="mb-4 text-5xl font-bold md:mb-6 md:text-6xl ">
 							BLOG
 						</h1>
