@@ -11,7 +11,7 @@ const BlogElementPage: NextPage = () => {
 		<div>
 			<BannerLeletom blog={l} />
 			<div className="mcontainer">
-				<div className="w-3/4 mx-auto my-10 md:mt-14">
+				<div className="mx-auto my-10 md:my-10 md:w-3/4 md:mt-14">
 					<LelethomArticle blog={l} />
 				</div>
 			</div>

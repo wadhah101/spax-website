@@ -27,7 +27,7 @@ const BannerLeletom: React.FC<IArticleProps> = ({ blog }) => {
 							{formatedDate}
 							&nbsp;&nbsp;&nbsp;
 						</p>
-						<h1 className="mb-4 text-5xl font-bold md:mb-6 md:text-6xl ">
+						<h1 className="mb-4 text-4xl font-bold md:mb-6 md:text-6xl ">
 							{blog.title}
 						</h1>
 					</div>
