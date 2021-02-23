@@ -8,7 +8,12 @@ const Footer: React.FC = () => {
 		<footer className={styles.footer}>
 			<div className="flex flex-col text-white mcontainer md:flex-row">
 				<div>
-					<img className="w-60" src="/logo/logo-spax-2021-white-400.png" />
+					<img
+						loading="lazy"
+						alt="footer image"
+						className="w-60"
+						src="/logo/logo-spax-2021-white-400.png"
+					/>
 					<p className="mt-6 text-sm font-semibold">
 						© 2021 All Right reserved
 					</p>

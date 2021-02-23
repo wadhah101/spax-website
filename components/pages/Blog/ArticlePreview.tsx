@@ -11,8 +11,13 @@ const ArticlePreview: React.FunctionComponent<IArticleProps> = ({ blog }) => {
 	const formatedDate = dayjs(blog.date).format('DD MMMM YYYY')
 	return (
 		<div className="flex flex-col md:flex-row">
-			<img className="w-full md:w-96" src={blog.image} />
-			<div className="flex flex-col items-start flex-grow mt-4 md:mt-0 md:ml-12">
+			<img
+				alt={`${blog.title} image`}
+				loading="lazy"
+				className="w-full md:w-96"
+				src={blog.image}
+			/>
+			<div className="mt-4 md:mt-0 md:ml-12">
 				<h1 className="text-3xl font-semibold text-black md:text-opacity-80">
 					{blog.title}
 				</h1>

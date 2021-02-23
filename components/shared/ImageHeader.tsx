@@ -8,6 +8,7 @@ interface IImageHeaderProps extends React.ImgHTMLAttributes<any> {
 const ImageHeader: React.FunctionComponent<IImageHeaderProps> = ({
 	className,
 	height,
+	alt,
 	src,
 	children,
 }) => {
@@ -17,6 +18,7 @@ const ImageHeader: React.FunctionComponent<IImageHeaderProps> = ({
 			className={clsx('relative ', className)}
 		>
 			<img
+				alt={alt}
 				className="absolute top-0 left-0 object-cover w-full h-full "
 				loading="lazy"
 				src={src}

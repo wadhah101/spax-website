@@ -1,7 +1,6 @@
 import * as React from 'react'
 import styles from './speakers.module.scss'
 import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
-import { useAnalytics } from 'use-analytics'
 import clsx from 'clsx'
 
 const nader = {
@@ -52,8 +51,6 @@ const ahmed = {
 const arr = [nader, ahlem, afef, ahmed]
 
 const Speakers: React.FunctionComponent = () => {
-	const { track } = useAnalytics()
-
 	return (
 		<section className={styles.greyBg}>
 			<div className={styles.container}>
@@ -79,7 +76,6 @@ const Speakers: React.FunctionComponent = () => {
 										href={e.social.linkedin}
 										rel="noreferrer"
 										target="_blank"
-										onClick={() => track(`${e.firstName} linkedin click`)}
 									>
 										<FaLinkedin />
 									</a>
@@ -88,7 +84,6 @@ const Speakers: React.FunctionComponent = () => {
 										href={e.social.fb}
 										rel="noreferrer"
 										target="_blank"
-										onClick={() => track(`${e.firstName} facebook click`)}
 									>
 										<FaFacebookF />
 									</a>

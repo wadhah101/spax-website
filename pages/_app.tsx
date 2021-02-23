@@ -2,8 +2,6 @@ import '../styles/index.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from '../styles/theme'
-import { AnalyticsProvider } from 'use-analytics'
-import { defaultAnalytics } from '../lib/analytics'
 import React, { createContext, useState } from 'react'
 import AppHead from '../components/app/AppHead'
 import Header from '../components/app/Header'
@@ -34,17 +32,15 @@ overflow : hidden;
 const MyApp: React.FunctionComponent<AppProps> = ({ Component, pageProps }) => {
 	const [videoOpen, setVideoOpen] = useState(false)
 	return (
-		<AnalyticsProvider instance={defaultAnalytics}>
-			<ThemeProvider theme={defaultTheme}>
-				<AppHead />
-				<Header />
-				{videoOpen && stopScroll}
-				<appContext.Provider value={{ videoOpen, setVideoOpen }}>
-					<Component {...pageProps} />
-				</appContext.Provider>
-				<Footer />
-			</ThemeProvider>
-		</AnalyticsProvider>
+		<ThemeProvider theme={defaultTheme}>
+			<AppHead />
+			<Header />
+			{videoOpen && stopScroll}
+			<appContext.Provider value={{ videoOpen, setVideoOpen }}>
+				<Component {...pageProps} />
+			</appContext.Provider>
+			<Footer />
+		</ThemeProvider>
 	)
 }
 

@@ -2,11 +2,8 @@ import clsx from 'clsx'
 import * as React from 'react'
 import FactsVideo from '../Video'
 import styles from './style.module.scss'
-import { useAnalytics } from 'use-analytics'
 
 const FactsBanner: React.FunctionComponent = () => {
-	const { track } = useAnalytics()
-
 	return (
 		<section
 			className={clsx(
@@ -21,7 +18,7 @@ const FactsBanner: React.FunctionComponent = () => {
 						styles['grid-colums-1-2-3']
 					)}
 				>
-					<div onClick={() => track('region 8 vid')}>
+					<div>
 						<FactsVideo />
 					</div>
 					<div>

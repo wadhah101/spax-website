@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styles from './style.module.scss'
-import { useAnalytics } from 'use-analytics'
 import clsx from 'clsx'
 
 const eniso = {
@@ -18,8 +17,6 @@ const insat = {
 const commite = [insat, eniso]
 
 const Committee: React.FunctionComponent = () => {
-	const { track } = useAnalytics()
-
 	return (
 		<section className={clsx(styles.wrapper, styles.reduced)}>
 			<div className={styles.container}>
@@ -47,7 +44,6 @@ const Committee: React.FunctionComponent = () => {
 								className={styles.el}
 								key={ind}
 								title={e.name}
-								onClick={() => track(`${e.name} link click`)}
 							>
 								<div className={styles.imgFilltoCenter}>
 									<img alt={e.name} src={e.image} />

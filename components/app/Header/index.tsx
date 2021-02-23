@@ -7,18 +7,15 @@ import navStyles from './nav.anchor.module.scss'
 import clsx from 'clsx'
 import * as fi from 'react-icons/fi'
 import { useOnClickOutside } from '../../../lib/onClickOutsideHook'
-import { useAnalytics } from 'use-analytics'
 import { withRouter } from 'next/router'
 import { WithRouterProps } from 'next/dist/client/with-router'
 
 const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
-	const { track } = useAnalytics()
 	const [solidBackground, setSolidBackground] = React.useState(false)
 	const [open, setOpen] = React.useState(false)
 	const ref = React.useRef<HTMLTableHeaderCellElement>(null)
 	useOnClickOutside(ref, () => {
 		setOpen(false)
-		track('mobile menu auto close')
 	})
 
 	React.useEffect(() => {
@@ -79,7 +76,6 @@ const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
 				<div
 					onClick={() => {
 						setOpen((e) => !e)
-						track(`mobile menu manual ${open ? 'open' : 'close'}`)
 					}}
 					className={styles.menuIcon}
 				>

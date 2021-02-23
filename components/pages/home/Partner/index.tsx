@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styles from './partner.module.scss'
-import { useAnalytics } from 'use-analytics'
 import clsx from 'clsx'
 
 class Partner {
@@ -49,8 +48,6 @@ const partners = [
 ]
 
 const Partners: React.FunctionComponent = () => {
-	const { track } = useAnalytics()
-
 	return (
 		<section className={styles.wrapper}>
 			<div className={styles.container}>
@@ -64,7 +61,6 @@ const Partners: React.FunctionComponent = () => {
 						href={'https://www.novationcity.com/'}
 						className={clsx(styles.el, 'flex flex-col items-center mb-16')}
 						title={'novation city'}
-						onClick={() => track('novation city link click')}
 					>
 						<img alt="novation city picture" src="/partners/novation.webp" />
 					</a>
@@ -78,7 +74,6 @@ const Partners: React.FunctionComponent = () => {
 									className={styles.el}
 									key={ind}
 									title={e.name}
-									onClick={() => track(`${e.name} link click`)}
 								>
 									<div className={styles.imgFilltoCenter}>
 										<img alt={e.name} src={e.image} />
