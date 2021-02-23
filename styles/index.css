@@ -29,3 +29,7 @@ body {
 	margin: auto;
 	padding: 0rem 1rem;
 }
+
+img {
+	color: transparent;
+}
