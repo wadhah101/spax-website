@@ -11,7 +11,7 @@ const Banner: React.FunctionComponent = () => {
 			<div className="z-10 flex flex-col items-center flex-grow text-center mcontainrt">
 				<h1>
 					<img
-						className=" w-72 md:w-96"
+						className="w-60 md:w-96"
 						src="/logo/logo-spax-2021-white-400.png"
 					/>
 				</h1>
