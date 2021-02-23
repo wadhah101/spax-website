@@ -11,13 +11,19 @@ const BlogElementPage: NextPage = () => {
 	return (
 		<div>
 			<Head>
-				<title>The starting of L’ellet’hom</title>
-				<meta name="Description" content="The starting of L’ellet’hom" />
+				<title>From Engineering To Entrepreneurship</title>
+				<meta
+					name="Description"
+					content="From Engineering To Entrepreneurship"
+				/>
 
-				<meta property="og:title" content="The starting of L’ellet’hom" />
+				<meta
+					property="og:title"
+					content="From Engineering To Entrepreneurship"
+				/>
 				<meta
 					property="og:description"
-					content="The Official Blog for Spax-Tunisia Event"
+					content="From Engineering To Entrepreneurship"
 				/>
 				<meta property="og:image" content="/thumbnails/lilethom.jpg" />
 				<meta
