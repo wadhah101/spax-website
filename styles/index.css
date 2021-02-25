@@ -7,20 +7,9 @@ header {
 	font-family: 'Poppins', sans-serif;
 }
 
-html {
-	font-family: 'Montserrat', sans-serif;
-}
-
-/* h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Playfair Display', sans-serif;
-} */
-
 /* WARNING ONLY USE FOR PROD */
 body {
+	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
 }
 
