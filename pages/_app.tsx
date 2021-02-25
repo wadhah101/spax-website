@@ -2,43 +2,39 @@ import '../styles/index.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from '../styles/theme'
-import React, { createContext, useState } from 'react'
+import React from 'react'
 import AppHead from '../components/app/AppHead'
 import Header from '../components/app/Header'
 import '../styles/scss/index.scss'
 import Footer from '../components/app/Footer'
 
-interface IGlobalState {
-	videoOpen: boolean
-	setVideoOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
+// interface IGlobalState {
+// 	videoOpen: boolean
+// 	setVideoOpen: React.Dispatch<React.SetStateAction<boolean>>
+// }
 
 // TODO proper context api implimentation
-export const appContext = createContext<IGlobalState>({
-	videoOpen: false,
-	setVideoOpen: null,
-})
+// export const appContext = createContext<IGlobalState>({
+// 	videoOpen: false,
+// 	setVideoOpen: null,
+// })
 
-const stopScroll = (
-	<style>
-		{`
-body {
-overflow : hidden;
-}
-`}
-	</style>
-)
+// const stopScroll = (
+// 	<style>
+// 		{`
+// body {
+// overflow : hidden;
+// }
+// `}
+// 	</style>
+// )
 
 const MyApp: React.FunctionComponent<AppProps> = ({ Component, pageProps }) => {
-	const [videoOpen, setVideoOpen] = useState(false)
 	return (
 		<ThemeProvider theme={defaultTheme}>
 			<AppHead />
 			<Header />
-			{videoOpen && stopScroll}
-			<appContext.Provider value={{ videoOpen, setVideoOpen }}>
-				<Component {...pageProps} />
-			</appContext.Provider>
+			<Component {...pageProps} />
 			<Footer />
 		</ThemeProvider>
 	)

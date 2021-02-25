@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import * as React from 'react'
 
-interface IImageHeaderProps extends React.ImgHTMLAttributes<any> {
+interface IImageHeaderProps extends React.ImgHTMLAttributes<Element> {
 	height: number
 }
 
