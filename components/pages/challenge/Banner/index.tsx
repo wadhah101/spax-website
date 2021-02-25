@@ -20,10 +20,10 @@ const ChallengeBanner: React.FunctionComponent = () => {
 						Our special challenge. <br /> The first of its kind in Tunisia IS
 						caling you
 					</h2>
-					<div className="flex ">
+					<div className="flex flex-col mt-6 md:flex-row md:mt-8 ">
 						{/* TODO organize : repeating myself */}
 						<a
-							className="inline-flex items-center px-6 py-2 mt-8 font-semibold tracking-wider duration-300 border-2 border-white md:text-xl hover:bg-white hover:text-black hover:text-opacity-80 hover:"
+							className="inline-flex items-center px-6 py-2 font-semibold tracking-wider duration-300 border-2 border-white md:text-xl hover:bg-white hover:text-black hover:text-opacity-80 hover:"
 							href="/pages/challenge/cdc-spax.pdf"
 							download="cdc-spax.pdf"
 						>
@@ -34,7 +34,7 @@ const ChallengeBanner: React.FunctionComponent = () => {
 						</a>
 
 						<a
-							className="inline-flex items-center px-6 py-2 mt-8 font-semibold tracking-wider text-black duration-300 bg-white border-2 border-white md:ml-4 md:text-xl text-opacity-70 "
+							className="inline-flex items-center px-6 py-2 mt-4 font-semibold tracking-wider text-black duration-300 bg-white border-2 border-white md:mt-0 md:ml-4 md:text-xl text-opacity-70 "
 							href="https://ieeespaxinsatxenitsb.typeform.com/to/NcsOtEqu"
 							target="_blank"
 							rel="noreferrer"
