@@ -16,7 +16,7 @@ const ChallengeBanner: React.FunctionComponent = () => {
 					<h1 className="text-4xl font-bold tracking-wide md:text-8xl">
 						CHALLENGE
 					</h1>
-					<h2 className="mt-6 text-2xl text-center md:text-left">
+					<h2 className="mt-6 text-xl text-center md:text-2xl md:text-left">
 						Our special challenge. <br /> The first of its kind in Tunisia IS
 						caling you
 					</h2>
