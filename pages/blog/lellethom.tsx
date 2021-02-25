@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import * as React from 'react'
-import { mainArticles } from '../../components/pages/Blog/data'
-import BannerLeletom from '../../components/pages/Blog/Lelethom/Banner'
+import { mainArticles } from '../../components/pages/Blog/blogs.data'
+import BannerLeletom from '../../components/pages/Blog/Lelethom/LelethomBanner'
 import LelethomArticle from '../../components/pages/Blog/Lelethom/LelethomArticle'
 
 const l = mainArticles[0]
@@ -12,19 +12,10 @@ const BlogElementPage: NextPage = () => {
 		<div>
 			<Head>
 				<title>From Engineering To Entrepreneurship</title>
-				<meta
-					name="Description"
-					content="From Engineering To Entrepreneurship"
-				/>
+				<meta name="Description" content={l.description} />
 
-				<meta
-					property="og:title"
-					content="From Engineering To Entrepreneurship"
-				/>
-				<meta
-					property="og:description"
-					content="From Engineering To Entrepreneurship"
-				/>
+				<meta property="og:title" content={l.title} />
+				<meta property="og:description" content={l.description} />
 				<meta property="og:image" content="/thumbnails/lilethom.jpg" />
 				<meta
 					property="og:url"

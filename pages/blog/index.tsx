@@ -1,9 +1,9 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import * as React from 'react'
-import ArticleList from '../../components/pages/Blog/ArticleList'
-import BlogBanner from '../../components/pages/Blog/Banner'
-import { mainArticles } from '../../components/pages/Blog/data'
+import ArticleList from '../../components/pages/Blog/BlogList'
+import BlogBanner from '../../components/pages/Blog/BlogBanner'
+import { mainArticles } from '../../components/pages/Blog/blogs.data'
 
 const BlogPage: NextPage = () => {
 	return (

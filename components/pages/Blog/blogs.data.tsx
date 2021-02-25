@@ -1,5 +1,9 @@
 export interface Blog {
-	image: string
+	image: {
+		href: string
+		width?: number
+		height?: number
+	}
 	title: string
 	description: string
 	date: Date
@@ -10,7 +14,11 @@ export interface Blog {
 
 export const mainArticles: Blog[] = [
 	{
-		image: '/pages/blog/lilethom/banner.jpg',
+		image: {
+			href: '/pages/blog/lilethom/banner.jpg',
+			width: 1920,
+			height: 1597,
+		},
 		title: 'From Engineering To Entrepreneurship',
 		description:
 			'Engineering is one of the most honorable jobs in the world. The advancement, we, as the human race, made due to engineering is immense. However, due to this fact, when we talk about engineers as individuals, we only think about machinery, electricity among other industrial fields and limit their individual potential as simply that, people who facilitate our lives in the technical prospect....',

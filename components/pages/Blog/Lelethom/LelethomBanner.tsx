@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import * as React from 'react'
 import ImageHeader from '../../../shared/ImageHeader'
-import { Blog } from '../data'
+import { Blog } from '../blogs.data'
 
 interface IArticleProps {
 	blog: Blog
@@ -14,7 +14,7 @@ const BannerLeletom: React.FC<IArticleProps> = ({ blog }) => {
 		<div>
 			<ImageHeader
 				alt="Blog Page Banner Image"
-				src={blog.image}
+				src={blog.image.href}
 				className="grid place-items-center"
 				height={50}
 			>

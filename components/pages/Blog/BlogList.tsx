@@ -1,6 +1,6 @@
 import * as React from 'react'
-import ArticlePreview from './ArticlePreview'
-import { Blog } from './data'
+import BlogPreview from './BlogPreview'
+import { Blog } from './blogs.data'
 
 interface IArticleListProps {
 	blogs: Blog[]
@@ -10,7 +10,7 @@ const ArticleList: React.FunctionComponent<IArticleListProps> = ({ blogs }) => {
 	return (
 		<div className="grid gap-8">
 			{blogs.map((e, ind) => (
-				<ArticlePreview key={ind} blog={e} />
+				<BlogPreview key={ind} blog={e} />
 			))}
 		</div>
 	)

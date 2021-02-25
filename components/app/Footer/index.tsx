@@ -1,11 +1,10 @@
 import { socialElements } from '../../../data/social.data'
-import styles from './footer.module.scss'
 import { FaMailBulk } from 'react-icons/fa'
 import React from 'react'
 
 const Footer: React.FC = () => {
 	return (
-		<footer className={styles.footer}>
+		<footer style={{ background: '#444', padding: '8vh 0', color: '#222' }}>
 			<div className="flex flex-col text-white mcontainer md:flex-row">
 				<div>
 					<img

@@ -13,7 +13,7 @@ import { WithRouterProps } from 'next/dist/client/with-router'
 const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
 	const [solidBackground, setSolidBackground] = React.useState(false)
 	const [open, setOpen] = React.useState(false)
-	const ref = React.useRef<HTMLTableHeaderCellElement>(null)
+	const ref = React.useRef<HTMLHeadElement>(null)
 	useOnClickOutside(ref, () => {
 		setOpen(false)
 	})

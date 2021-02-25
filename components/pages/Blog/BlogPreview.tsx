@@ -1,13 +1,13 @@
 import dayjs from 'dayjs'
 import Link from 'next/link'
 import * as React from 'react'
-import { Blog } from './data'
+import { Blog } from './blogs.data'
 
 interface IArticleProps {
 	blog: Blog
 }
 
-const ArticlePreview: React.FunctionComponent<IArticleProps> = ({ blog }) => {
+const BlogPreview: React.FunctionComponent<IArticleProps> = ({ blog }) => {
 	const formatedDate = dayjs(blog.date).format('DD MMMM YYYY')
 	return (
 		<div className="flex flex-col md:flex-row">
@@ -15,7 +15,9 @@ const ArticlePreview: React.FunctionComponent<IArticleProps> = ({ blog }) => {
 				alt={`${blog.title} image`}
 				loading="lazy"
 				className="w-full md:w-96"
-				src={blog.image}
+				src={blog.image.href}
+				width={blog.image.width}
+				height={blog.image.height}
 			/>
 			<div className="mt-4 md:mt-0 md:ml-12">
 				<h1 className="text-2xl font-semibold text-black md:text-3xl md:text-opacity-80">
@@ -39,4 +41,4 @@ const ArticlePreview: React.FunctionComponent<IArticleProps> = ({ blog }) => {
 	)
 }
 
-export default ArticlePreview
+export default BlogPreview
