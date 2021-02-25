@@ -4,7 +4,7 @@ import Countdown from '../Countdown'
 import dayjs from 'dayjs'
 
 const Banner: React.FunctionComponent = () => {
-	const eventDate = dayjs('2021-03-07T13:00:00.000Z')
+	const eventDate = dayjs('2021-03-07T09:00:00.000Z')
 
 	return (
 		<BannerWithImage opacity={0.3} as="section" src="/pages/home/banner.jpg">
