@@ -4,7 +4,7 @@ import duration from 'dayjs/plugin/duration'
 import dayjs, { Dayjs } from 'dayjs'
 import clsx from 'clsx'
 
-const periods = ['Weeks', 'Days', 'Hours', 'Min', 'Sec']
+const periods = ['Week', 'Day', 'Hour', 'Minute', 'Second']
 const dateDiffFactoryFix = (current: Dayjs, event: Dayjs): number[] => {
 	const diff = dayjs.duration(event.diff(current))
 	return [
@@ -24,7 +24,10 @@ const Countdown: React.FC<ICountdownProps> = ({ date }) => {
 	const [data, setdata] = React.useState(new Array<number>(5).fill(0))
 	const dataView = React.useMemo(
 		() =>
-			[...data].reverse().map((e, ind) => ({ value: e, text: periods[ind] })),
+			[...data].reverse().map((e, ind) => ({
+				value: e,
+				text: `${periods[ind]}${e > 1 ? 's' : ''}`,
+			})),
 		[data]
 	)
 
