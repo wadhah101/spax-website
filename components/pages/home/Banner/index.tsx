@@ -2,6 +2,7 @@ import * as React from 'react'
 import BannerWithImage from '../../../template/BannerWithImage'
 import Countdown from '../Countdown'
 import dayjs from 'dayjs'
+import { socialElements } from '../../../../data/social.data'
 
 const Banner: React.FunctionComponent = () => {
 	const eventDate = dayjs('2021-03-07T09:00:00.000Z')
@@ -16,6 +17,20 @@ const Banner: React.FunctionComponent = () => {
 					/>
 				</h1>
 
+				<div className="flex items-center mt-8 ">
+					{socialElements.map((e) => (
+						<a
+							title={e.name}
+							href={e.href}
+							target="_blank"
+							rel="noopener noreferrer"
+							key={e.href}
+							className="mr-4 text-3xl"
+						>
+							<e.icon />
+						</a>
+					))}
+				</div>
 				<div className="mt-8">
 					<Countdown date={eventDate} />
 				</div>

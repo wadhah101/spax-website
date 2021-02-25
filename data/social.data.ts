@@ -14,16 +14,10 @@ const socialElementFactory = (
 export const socialElements: SocialElement[] = [
 	socialElementFactory(
 		fa.FaFacebook,
-		navElementGen(
-			'https://www.facebook.com/Tunisia-Entrepreneurship-Summit-Triple-I-112265417325918/',
-			'facebook page'
-		)
+		navElementGen('https://www.facebook.com/spax.tunisia.21/', 'facebook page')
 	),
 	socialElementFactory(
 		fa.FaInstagram,
-		navElementGen(
-			'https://www.instagram.com/tes_action_for_iii/',
-			'instagram page'
-		)
+		navElementGen('https://www.instagram.com/spax.tunisia/', 'instagram page')
 	),
 ]
