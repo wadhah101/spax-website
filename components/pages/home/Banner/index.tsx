@@ -9,6 +9,7 @@ const Banner: React.FunctionComponent = () => {
 	return (
 		<div className="relative w-full ">
 			<img
+				loading="lazy"
 				className="absolute top-0 left-0 w-full h-full "
 				src="/pages/home/banner.jpg"
 			/>
