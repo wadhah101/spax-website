@@ -17,7 +17,7 @@ interface ICountdownProps {
 }
 
 const Countdown: React.FC<ICountdownProps> = ({ date }) => {
-	const [data, setdata] = React.useState(new Array<number>(5).fill(0))
+	const [data, setdata] = React.useState(new Array<number>(4).fill(0))
 	const dataView = React.useMemo(
 		() =>
 			[...data].reverse().map((e, ind) => ({
