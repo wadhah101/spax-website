@@ -39,11 +39,8 @@ const Countdown: React.FC<ICountdownProps> = ({ date }) => {
 	}, [])
 	return (
 		<div className="grid grid-cols-2 gap-4 md:grid-cols-4 ">
-			{dataView.map(({ value, text }, ind) => (
-				<div
-					className={clsx(ind === 0 && 'col-span-2 md:col-span-1')}
-					key={text}
-				>
+			{dataView.map(({ value, text }) => (
+				<div key={text}>
 					<CountdownElement value={value} text={text} />
 				</div>
 			))}
