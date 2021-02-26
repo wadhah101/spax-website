@@ -58,7 +58,7 @@ const LelethomArticle: React.FC<IArticleProps> = () => {
 			</p>
 
 			<p>
-				During her stay in the US, she along with two of her friends, Shiheb and
+				During her stay in the US, she along with two of her friends, Chiheb and
 				Ahmed, came up with the idea of “L’ellet’hom”, a project idea that
 				enabled them to win the AEIF (Allumni Engagement Innovation Fund)
 				competition. And so, Ahlem Jedidi became a co-founder and CEO, bringing
