@@ -1,5 +1,4 @@
 import * as React from 'react'
-import BannerWithImage from '../../../template/BannerWithImage'
 import Countdown from '../Countdown'
 import dayjs from 'dayjs'
 import { socialElements } from '../../../app/data/social.data'
@@ -8,8 +7,14 @@ const Banner: React.FunctionComponent = () => {
 	const eventDate = dayjs('2021-03-07T09:00:00.000Z')
 
 	return (
-		<BannerWithImage opacity={0.3} as="section" src="/pages/home/banner.jpg">
-			<div className="z-10 flex flex-col items-center flex-grow text-center mcontainrt">
+		<div className="relative w-full ">
+			<img
+				className="absolute top-0 left-0 w-full h-full "
+				src="/pages/home/banner.jpg"
+			/>
+			<div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30" />
+			{/* content */}
+			<div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center text-white place-items-center f mcontainer">
 				<h1>
 					<img
 						className="w-60 md:w-96"
@@ -35,7 +40,7 @@ const Banner: React.FunctionComponent = () => {
 					<Countdown date={eventDate} />
 				</div>
 			</div>
-		</BannerWithImage>
+		</div>
 	)
 }
 

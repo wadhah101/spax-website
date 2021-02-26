@@ -57,7 +57,9 @@
 		}
 	},
 	"lint-staged": {
-		"*.{ts,tsx,js}": "yarn type-check && yarn lint",
-		"*.{js,scss,css,md,ts,tsx,json}": "yarn format"
+		"*.{ts,tsx,js}": [
+			"eslint . --ext ts --ext tsx --ext js --fix"
+		],
+		"*.{js,scss,css,md,ts,tsx,json}": "prettier --write"
 	}
 }
