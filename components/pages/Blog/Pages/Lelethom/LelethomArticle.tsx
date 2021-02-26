@@ -7,9 +7,9 @@ interface IArticleProps {
 
 const LelethomArticle: React.FC<IArticleProps> = () => {
 	return (
-		<div className="grid gap-2 text-black md:gap-4 md:text-opacity-80 ">
+		<div className="grid gap-2 text-black md:gap-4 md:text-opacity-90 ">
 			<p className="">
-				<span className="text-lg font-medium text-black text-opacity-90">
+				<span className="text-lg font-medium text-black text-opacity-95">
 					Engineering is one of the most honorable jobs in the world. The
 					advancement that we, as the human race, made through engineering is
 					immense.

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import * as React from 'react'
 import BlogBanner from '../../components/pages/Blog/BlogBanner'
 import ArticleList from '../../components/pages/Blog/BlogList'
-import { mainArticles } from '../../components/pages/Blog/blogs.data'
+import { mainArticles } from '../../components/pages/Blog/data/blogs.data'
 
 const BlogPage: NextPage = () => {
 	return (
