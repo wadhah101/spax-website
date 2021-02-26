@@ -1,11 +1,11 @@
 import { NextPage } from 'next'
 import React from 'react'
 import Banner from '../components/pages/home/Banner'
-import BasePage from '../components/shared/BasePage'
+import HomeSecription from '../components/pages/home/Description/HomeDescription'
 
 export const Home: NextPage = () => {
 	return (
-		<BasePage>
+		<div>
 			{/* OverVeiw of the event */}
 			{/* conference parts */}
 			{/* organizers */}
@@ -14,7 +14,11 @@ export const Home: NextPage = () => {
 			{/* location */}
 			{/* latest blogs */}
 			<Banner />
-		</BasePage>
+
+			<div className="py-14 mcontainer">
+				<HomeSecription />
+			</div>
+		</div>
 	)
 }
 
