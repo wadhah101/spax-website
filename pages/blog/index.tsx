@@ -2,6 +2,8 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import * as React from 'react'
 import BlogBanner from '../../components/pages/Blog/BlogBanner'
+import ArticleList from '../../components/pages/Blog/BlogList'
+import { mainArticles } from '../../components/pages/Blog/blogs.data'
 
 const BlogPage: NextPage = () => {
 	return (
@@ -20,7 +22,7 @@ const BlogPage: NextPage = () => {
 				style={{ minHeight: '50vh' }}
 				className="flex items-center py-10 md:py-14 mcontainer"
 			>
-				{/* <ArticleList blogs={mainArticles} /> */}
+				<ArticleList blogs={mainArticles} />
 			</div>
 		</div>
 	)
