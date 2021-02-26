@@ -23,6 +23,7 @@
 		"react-icons": "^4.1.0",
 		"react-player": "^2.7.2",
 		"react-portal": "^4.2.1",
+		"react-use": "^17.1.1",
 		"sass": "^1.32.4",
 		"styled-breakpoints": "^9.0.9",
 		"styled-components": "^5.2.1",

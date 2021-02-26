@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import * as React from 'react'
-import ImageHeader from '../../../shared/ImageHeader'
-import { Blog } from '../blogs.data'
+import ImageHeader from '../../../../shared/ImageHeader'
+import { Blog } from '../../data/blogs.data'
 
 interface IArticleProps {
 	blog: Blog

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Blog } from '../blogs.data'
+import { Blog } from '../../data/blogs.data'
 
 interface IArticleProps {
 	blog: Blog
