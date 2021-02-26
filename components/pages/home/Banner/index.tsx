@@ -2,7 +2,7 @@ import * as React from 'react'
 import BannerWithImage from '../../../template/BannerWithImage'
 import Countdown from '../Countdown'
 import dayjs from 'dayjs'
-import { socialElements } from '../../../../data/social.data'
+import { socialElements } from '../../../app/data/social.data'
 
 const Banner: React.FunctionComponent = () => {
 	const eventDate = dayjs('2021-03-07T09:00:00.000Z')

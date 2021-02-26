@@ -1,5 +1,5 @@
 import { IconType } from 'react-icons'
-import { NavElement, navElementGen } from './nav.data'
+import { NavElement, navElementGen } from './navigation.data'
 import * as fa from 'react-icons/fa'
 
 export interface SocialElement extends NavElement {

@@ -1,7 +1,8 @@
 @import './shared.scss';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
 	font-size: 16px;
@@ -11,4 +12,26 @@ html {
 	@include xl {
 		font-size: 16px;
 	}
+}
+
+/* header font  */
+
+header {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* WARNING ONLY USE FOR PROD */
+body {
+	font-family: 'Montserrat', sans-serif;
+	// overflow-x: hidden;
+}
+
+.mcontainer {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0rem 1rem;
+}
+
+img {
+	color: transparent;
 }

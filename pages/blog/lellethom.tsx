@@ -1,9 +1,9 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import * as React from 'react'
-import { mainArticles } from '../../components/pages/Blog/blogs.data'
-import BannerLeletom from '../../components/pages/Blog/Lelethom/LelethomBanner'
-import LelethomArticle from '../../components/pages/Blog/Lelethom/LelethomArticle'
+import { mainArticles } from '../../components/pages/Blog/data/blogs.data'
+import BannerLeletom from '../../components/pages/Blog/Pages/Lelethom/LelethomBanner'
+import LelethomArticle from '../../components/pages/Blog/Pages/Lelethom/LelethomArticle'
 
 const l = mainArticles[0]
 

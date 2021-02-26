@@ -6,6 +6,13 @@ import BasePage from '../components/shared/BasePage'
 export const Home: NextPage = () => {
 	return (
 		<BasePage>
+			{/* OverVeiw of the event */}
+			{/* conference parts */}
+			{/* organizers */}
+			{/* program */}
+			{/* speakers */}
+			{/* location */}
+			{/* latest blogs */}
 			<Banner />
 		</BasePage>
 	)

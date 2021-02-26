@@ -1,4 +1,4 @@
-import { socialElements } from '../../../data/social.data'
+import { socialElements } from '../data/social.data'
 import { FaMailBulk } from 'react-icons/fa'
 import React from 'react'
 

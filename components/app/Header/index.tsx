@@ -1,22 +1,20 @@
 import Link from 'next/link'
 import * as React from 'react'
-import { navElements } from '../../../data/nav.data'
+import { navElements } from '../data/navigation.data'
 import NavLink from '../../template/NavLink'
 import styles from './header.module.scss'
 import navStyles from './nav.anchor.module.scss'
 import clsx from 'clsx'
 import * as fi from 'react-icons/fi'
-import { useOnClickOutside } from '../../../lib/onClickOutsideHook'
 import { withRouter } from 'next/router'
 import { WithRouterProps } from 'next/dist/client/with-router'
+import { useClickAway } from 'react-use'
 
 const Header: React.FunctionComponent<WithRouterProps> = ({ router }) => {
 	const [solidBackground, setSolidBackground] = React.useState(false)
 	const [open, setOpen] = React.useState(false)
 	const ref = React.useRef<HTMLHeadElement>(null)
-	useOnClickOutside(ref, () => {
-		setOpen(false)
-	})
+	useClickAway(ref, () => setOpen(false))
 
 	React.useEffect(() => {
 		let last_known_scroll_position = 0

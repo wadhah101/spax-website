@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 import Link from 'next/link'
 import * as React from 'react'
-import { Blog } from './blogs.data'
+import { Blog } from './data/blogs.data'
 
 interface IArticleProps {
 	blog: Blog
