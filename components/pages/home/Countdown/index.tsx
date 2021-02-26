@@ -11,7 +11,7 @@ const dateDiffFactoryFix = (current: Dayjs, event: Dayjs): number[] => {
 		diff.seconds(),
 		diff.minutes(),
 		diff.hours(),
-		diff.days(),
+		diff.days() - diff.weeks() * 7,
 		diff.weeks(),
 	].map((e) => Math.max(0, e))
 }
