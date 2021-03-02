@@ -61,5 +61,9 @@
 			"eslint . --ext ts --ext tsx --ext js --fix"
 		],
 		"*.{js,scss,css,md,ts,tsx,json}": "prettier --write"
+	},
+	"volta": {
+		"node": "14.16.0",
+		"yarn": "1.22.10"
 	}
 }
