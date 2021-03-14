@@ -18,11 +18,13 @@ const BlogPage: NextPage = () => {
 				<meta property="og:url" content="https://spax-tunisia.tech/blog" />
 			</Head>
 			<BlogBanner />
-			<div
-				style={{ minHeight: '50vh' }}
-				className="flex items-center py-10 md:py-14 mcontainer"
-			>
-				<ArticleList blogs={mainArticles} />
+			<div className="mcontainer">
+				<div
+					style={{ minHeight: '50vh' }}
+					className="flex items-center py-10 md:py-14 "
+				>
+					<ArticleList blogs={mainArticles} />
+				</div>
 			</div>
 		</div>
 	)
