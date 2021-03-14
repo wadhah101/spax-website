@@ -11,7 +11,7 @@ const MiniTitle: React.FC = ({ children }) => (
 	<h2 className="mb-1 text-xl font-semibold "> {children} </h2>
 )
 
-const Br = () => <br className="mb-2" />
+const Br = () => <div className="mb-2" />
 
 const TalksArticles: React.FC<IArticleProps> = () => {
 	return (
@@ -282,7 +282,7 @@ const TalksArticles: React.FC<IArticleProps> = () => {
 						</li>
 					</ol>
 
-					<Br />
+					<div className="mt-8" />
 					<Title>II. The Debate </Title>
 					<p>
 						The debate was initiated by our moderator
