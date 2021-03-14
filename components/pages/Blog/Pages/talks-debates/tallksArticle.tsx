@@ -353,7 +353,7 @@ const TalksArticles: React.FC<IArticleProps> = () => {
 						</li>
 						<li>
 							<MiniTitle>3. Brain-drain : root causes and outcomes</MiniTitle>
-							<p>
+							<p className="not-italic  regular">
 								In developing countries nowadays, it seems as though young
 								engineers are in face of two possible options: travelling to a
 								developed country, or stagnating in the first stable job they
@@ -401,9 +401,9 @@ const TalksArticles: React.FC<IArticleProps> = () => {
 				<li className="text-sm">
 					<p> References </p>
 					<ul>
-						<li>[1]: Investopedia: Gross Domestic Product (GDP)</li>
+						<li>[1] Investopedia: Gross Domestic Product (GDP)</li>
 						<li>[2] Investopedia: Sovereign credit rating</li>
-						<li> [3] Investopedia: Sovereign debt </li>
+						<li>[3] Investopedia: Sovereign debt </li>
 						<li>[4] Investopedia: Spread definition</li>
 					</ul>
 				</li>
