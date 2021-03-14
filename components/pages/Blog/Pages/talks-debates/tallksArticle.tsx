@@ -80,8 +80,11 @@ const TalksArticles: React.FC<IArticleProps> = () => {
 									individual sacrifice for the sake of the collective health and
 									wealth. Teamwork, along with the right investment and
 									management of all available resources, is the right path
-									towards instilling a healthy democratic political system. «
-									Sciences are democracies’ bricks, and values their cement. »
+									towards instilling a healthy democratic political system.
+									<p className="my-1 italic ">
+										« Sciences are democracies’ bricks, and values their cement.
+										»
+									</p>
 									In order for a democracy to thrive, the values of the
 									population must meet at a common vision: for each individual
 									to assume their responsibilities and take on their roles in
