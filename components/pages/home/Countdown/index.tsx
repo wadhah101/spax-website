@@ -2,7 +2,6 @@ import React from 'react'
 import CountdownElement from './Element'
 import duration from 'dayjs/plugin/duration'
 import dayjs, { Dayjs } from 'dayjs'
-import clsx from 'clsx'
 
 const periods = ['Day', 'Hour', 'Minute', 'Second']
 const dateDiffFactoryFix = (current: Dayjs, event: Dayjs): number[] => {
