@@ -313,7 +313,7 @@ const TalksArticles: React.FC<IArticleProps> = () => {
 								Being an engineer is to have enough knowledge covering a broad
 								spectrum of disciplines. Just as the main subjects, relating to
 								the engineer’s expertise, is important, so are the soft skills
-								acquired, and the familiarity with social and human sciences.{' '}
+								acquired, and the familiarity with social and human sciences.
 								<Br /> Let’s take negotiation skills for example, an essential
 								ability an engineer must perfect. Negotiation has its forms of
 								art- the eloquence of speech and the subtlety of convincing
@@ -325,7 +325,7 @@ const TalksArticles: React.FC<IArticleProps> = () => {
 								– often referred to as soft skills as opposed the hard skills
 								(the other half that makes up an engineer’s profile). In fact,
 								soft skills may be the main criteria required of an engineer at
-								certain positions like project management.{' '}
+								certain positions like project management.
 							</p>
 						</li>
 						<li>
